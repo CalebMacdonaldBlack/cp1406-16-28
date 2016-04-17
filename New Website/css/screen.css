@@ -11,18 +11,23 @@
   font-size: 6em;
 }
 
-body {
+/*body {
   padding-top: 5em;
   background-image: url("../res/images/Bro-logo.png");
   background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 35em;
-    background-color: #4D52FF;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 35em;
+  background-color: #000863;
+}
+*/
+body{
+  background-color: whitesmoke;
+  padding-top: 5em;
 }
 
 .container-fluid {
-  background-color: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(#19005E, #1F0075);
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -32,19 +37,70 @@ body {
 .content-panel {
   margin: 2.5em;
   padding: 2.5em;
-  border-radius: 16px;
-  border: 0.3em solid black;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #DBDBDB;
 }
 
 .content-panel > h1 {
-  color: white;
-  font-size: 4em;
-  text-align: center;
+  font-size: 3.3em;
+}
+
+.content-panel > em {
+  font-size: 2.7em;
+}
+
+.content-panel-image {
+  width:95%;
+  margin: auto 2em auto 2em;
+}
+
+.content-panel-inner {
+  background-color: #D4D4D4;
+}
+
+.text-center > .btn{
+  font-size: 2.5em;
 }
 
 .btn {
-  font-size: 6em;
+  font-size: 3.5em;
   border-radius: 9px;
-  margin: .5em .5em 0 .5em;
+  margin: auto;
 }
+
+.btn-purple {
+  background-color: #4C9AED;
+  color: white;
+}
+
+.btn-gold {
+  background-color: #79BF3F;
+  color: white;
+}
+
+.call-to-action-image {
+  width:98%;
+  height:55em;
+  margin:1em;
+  background-image: url("../res/images/moredom.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.call-to-action-image > h1 {
+  padding-top: .7em;
+  color: #C4C4C4;
+  font-size: 6em;
+}
+
+.line {
+  background-color: #DBDBDB;
+  width: 90%;
+  margin: 2em auto 2em auto;
+  height: 0.2em;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2.5em;
+}
+
