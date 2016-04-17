@@ -37,6 +37,7 @@ body{
 .content-panel {
   margin: 2.5em;
   padding: 2.5em;
+  border-radius: .7em;
   background-color: #DBDBDB;
 }
 
@@ -90,6 +91,7 @@ body{
 
 .call-to-action-image > h1 {
   padding-top: .7em;
+  padding-bottom: 4.5em;
   color: #C4C4C4;
   font-size: 6em;
 }
@@ -104,3 +106,14 @@ body{
   line-height: 2.5em;
 }
 
+.page-heading{
+  text-align: center;
+}
+.page-heading > h1 {
+  font-size: 6em;
+}
+
+table {
+  font-size: 2.5em;
+  padding: 1em;
+}
