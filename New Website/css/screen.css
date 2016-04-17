@@ -1,32 +1,12 @@
-.logo {
-  width: 3em;
-  float: left;
-  margin: 1em;
+.glyphicon {
+  font-size: 4em;
 }
 
-.navbar-header > .vertical-center {
- font-size: 2em;
- max-width: 5em;
- text-align: center;
- line-height: 1em;
+.nav-title {
+  font-size: 5em;
+  margin-top: .3em;
 }
 
-.vertical-center li a{
- line-height: 2.4em;
-}
-
-.navbar-default .navbar-nav>li>a{
-  color: black;
-  font-size: 2em;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-background-color: purple;
-color: gold;
-}
-
-
-
-.navbar-default .navbar-brand {
-  color: black;
+.dropdown-menu>li {
+  font-size: 6em;
 }
