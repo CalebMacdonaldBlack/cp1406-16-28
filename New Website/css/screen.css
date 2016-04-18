@@ -56,6 +56,10 @@ body{
 
 .content-panel-inner {
   background-color: #D4D4D4;
+  border: .05em solid grey;
+  border-bottom: .15em solid grey;
+  border-right: .15em solid grey;
+  padding: .3em;
 }
 
 .text-center > .btn{
