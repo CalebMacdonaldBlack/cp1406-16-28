@@ -49,6 +49,10 @@ body{
   font-size: 2.7em;
 }
 
+.content-panel-inner > p {
+  font-size: 30px;
+}
+
 .content-panel-image {
   width:95%;
   margin: auto 2em auto 2em;
@@ -56,6 +60,10 @@ body{
 
 .content-panel-inner {
   background-color: #D4D4D4;
+  border: .05em solid grey;
+  border-bottom: .15em solid grey;
+  border-right: .15em solid grey;
+  padding: .3em;
 }
 
 .text-center > .btn{
@@ -108,6 +116,8 @@ body{
 
 .page-heading{
   text-align: center;
+  font-size: 70px;
+  margin-top: 1em;
 }
 .page-heading > h1 {
   font-size: 6em;
