@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -8,33 +7,47 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/screen.css" media="screen">
     <link rel="stylesheet" href="css/handheld.css" media="screen">
-
     <!--FOR GALLERY-->
-<script type="text/javascript">
-var sequence = 1;
-var numofimages = 9;
+    <script type="text/javascript">
+    var sequence = 1;
+    var numofimages = 9;
 
-function rotate(x) {
-  var Image = document.getElementById('img');
-  sequence = sequence + x;
-  if(sequence > numofimages){sequence = 1;}
-  if(sequence < 1){sequence = numofimages;}
-  Image.src = "Images/slavonicswoon/img"+ sequence +".jpg";
-  }
-
-</script>
+    function rotate(x) {
+        var Image = document.getElementById('img');
+        sequence = sequence + x;
+        if (sequence > numofimages) {
+            sequence = 1;
+        }
+        if (sequence < 1) {
+            sequence = numofimages;
+        }
+        Image.src = "Images/slavonicswoon/img" + sequence + ".jpg";
+    }
+    </script>
 </head>
 
 <body>
     <div class="navigation">
-        <div class="logo">
-            <h1>Barrier Reef Orchestra</h1>
-        </div>
-        <div class="nav-btn btn"><a href="#">Events</a></div>
-        <div class="nav-btn btn"><a href="#">Gallary</a></div>
-        <div class="nav-btn btn"><a href="#">Benifactors</a></div>
-        <div class="nav-btn btn"><a href="#">Our People</a></div>
-        <div class="nav-btn btn"><a href="#">About Us</a></div>
+        <a href="./index.html">
+            <div class="logo">
+                <h1>Barrier Reef Orchestra</h1>
+            </div>
+        </a>
+        <a href="./index.html">
+            <div class="nav-btn btn">Events</div>
+        </a>
+        <a href="./gallery.html">
+            <div class="nav-btn btn">Gallary</div>
+        </a>
+        <a href="./benifactors.html">
+            <div class="nav-btn btn">Benifactors</div>
+        </a>
+        <a href="./our-people.html">
+            <div class="nav-btn btn">Our People</div>
+        </a>
+        <a href="./about.html">
+            <div class="nav-btn btn">About Us</div>
+        </a>
     </div>
     <div class="row">
         <div class="all-column">
@@ -43,27 +56,24 @@ function rotate(x) {
         </div>
         <div class="center-column">
             <!-- Content -->
-
-        <h1 class="page-heading">Gallery</h1>
+            <h1 class="page-heading">Gallery</h1>
             <div id="container">
-                <img src="Images/slavonicswoon/img1.jpg" id="img"/>
-                <div id="left_holder"><img onClick="rotate(-1)" class="left" src="images/slavonicswoon/left-arrow-icon1.jpg"/></div>
-                <div id="right_holder"><img onClick="rotate(1)" class="right" src="images/slavonicswoon/right-arrow-icon.jpg"/></div>
+                <img src="Images/slavonicswoon/img1.jpg" id="img" />
+                <div id="left_holder"><img onClick="rotate(-1)" class="left" src="images/slavonicswoon/left-arrow-icon1.jpg" /></div>
+                <div id="right_holder"><img onClick="rotate(1)" class="right" src="images/slavonicswoon/right-arrow-icon.jpg" /></div>
             </div>
-            
-        <div class="line">Line name</div>
-
-        <div class="content-panel">
-          <h1>Title</h1>
-          <em>Sub title / other info</em>
-          <div class="content-panel-inner">
-            <p>Inner paragraphs</p>
-            <div class="text-center">
-              <button class="btn content-panel-btn-read-more">Read More</button>
+            <div class="line">Line name</div>
+            <div class="content-panel">
+                <h1>Title</h1>
+                <em>Sub title / other info</em>
+                <div class="content-panel-inner">
+                    <p>Inner paragraphs</p>
+                    <div class="text-center">
+                        <button class="btn content-panel-btn-read-more">Read More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Content -->
+            <!-- Content -->
         </div>
         <div class="right-column"></div>
     </div>

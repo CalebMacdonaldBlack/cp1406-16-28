@@ -1,7 +1,11 @@
 body {
     font-size: 100%;
-    background-image: url("../res/images/tile.jpg")
+    background-image: url("../res/images/tile.jpg");
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+
+/* Navigation bar */
 
 .navigation {
     width: 99%;
@@ -12,7 +16,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.navigation > .nav-btn {
+.navigation > a > .nav-btn {
     background-color: #00061a;
     width: 10%;
     margin: .2em 0.5%;
@@ -26,13 +30,13 @@ body {
     -o-transform: skew(-20deg);
 }
 
-.navigation > .logo {
+.navigation > a >.logo {
     margin-left: 1%;
     display: inline-block;
-    color: white;
+    color: #e6b800;
 }
 
-.navigation > .logo > h1 {
+.navigation > a >.logo > h1 {
     font-size: 2em;
     margin: 0;
 }
@@ -41,9 +45,12 @@ a {
     text-decoration: none;
 }
 
-.nav-btn > a {
+.nav-btn {
     color: white;
 }
+
+
+/* Page Layout */
 
 .row {
     width: 100%;
@@ -70,6 +77,9 @@ a {
 .all-column {
     width: 100%;
 }
+
+
+/* Call to action area on homepage */
 
 .img-display {
     background-image: url("../res/images/jenniferleahorch.jpg");
@@ -123,69 +133,150 @@ a {
     color: black;
 }
 
+
+/* page items */
+
 .page-heading {
     text-align: center;
     margin: 0;
+    color: #e6b800;
 }
 
 .line {
     width: 100%;
     height: 1px;
-    border-bottom: .1em solid #777777;
+    border-bottom: .1em solid #66a3ff;
     margin: 1em 0;
 }
 
+
+/* Content panels */
+
 .content-panel {
-    background-color: #99afff;
+    background-image: url("../res/images/tile-dark.jpg");
     border-radius: 0.2em;
     border: .1em solid #6687ff;
     padding: 0.6em;
+    overflow: auto;
+    color: white;
 }
-
-/*FOR GALLERY*/
-#container {
-	height: 450px;
-	width: 650px;
-	margin: 20px auto;
-	position: relative;
-	 }
-
-#img {
-	height: 450px;
-	width: 650px;
-	position: absolute;
-	}
-
-#left_holder {
-	height: 450px;
-	width: 100px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	}
-
-#right_holder {
-	height: 450px;
-	width: 100px;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	}
-.left {
-	height: 50px;
-	width: 50px;
-	position: absolute;
-	top: 40%;
-	left: 0px;
-}
-.right {
-	height: 50px;
-	width: 50px;
-	position: absolute;
-	top: 40%;
-	right: 0px;
-	}
 
 .content-panel > img {
-  max-width: 100%;
+    max-width: 100%;
+}
+
+.content-img {
+    max-width: 30%;
+    float: left;
+}
+
+.content-img > img {
+    border-radius: .3em;
+    max-width: 100%;
+}
+
+.content-text {
+    width: 68%;
+    float: left;
+    margin-left: 1em;
+}
+
+.content-panel-inner {
+    margin-left: 1em;
+}
+
+.content-text > h1 {
+    margin-bottom: .3em;
+    color: #e6b800;
+}
+
+.content-text > em {
+    color: grey;
+    margin-left: 1em;
+}
+
+.Committee {
+    font-size: 1.5em;
+    margin: .5em;
+}
+
+.btn-read-more {
+    margin: 0 auto;
+    display: block;
+    margin-top: 1em;
+    width: 20%;
+    background-color: #00061a;
+    border-top: 0.1em solid black;
+    border-left: 0.1em solid black;
+    border-right: 0.15em solid black;
+    border-bottom: 0.15em solid black;
+}
+
+
+/*FOR GALLERY*/
+
+#container {
+    height: 450px;
+    width: 650px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#img {
+    height: 450px;
+    width: 650px;
+    position: absolute;
+}
+
+#left_holder {
+    height: 450px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#right_holder {
+    height: 450px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.left {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    left: 0px;
+}
+
+.right {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    right: 0px;
+}
+
+table {
+    width: 35%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: .1em solid #66a3ff;
+}
+
+
+/* Tools */
+
+.center-text {
+    text-align: center;
+}
+
+.gold-text {
+    color: #e6b800;
 }
