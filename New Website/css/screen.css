@@ -141,3 +141,7 @@ a {
     border: .1em solid #6687ff;
     padding: 0.6em;
 }
+
+.content-panel > img {
+  max-width: 100%;
+}
