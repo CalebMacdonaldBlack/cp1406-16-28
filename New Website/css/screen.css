@@ -28,6 +28,15 @@ body {
     padding-left: 3em;
 }
 
+@media (max-width: 700px) {
+    .banner > h1 {
+        display: none;
+    }
+    .banner {
+        display: none;
+    }
+}
+
 .navigation > a > .nav-btn {
     text-shadow: 2px 2px black;
     float: left;
@@ -160,10 +169,17 @@ a {
     width: 65%;
     padding: 1em;
     border-radius: .35em;
+    font-size: .75em;
 }
 
 .img-display a {
     color: black;
+}
+
+@media (max-width: 1000px) {
+    .btn-container {
+        font-size: .4em;
+    }
 }
 
 
