@@ -1,45 +1,64 @@
 body {
     font-size: 100%;
-    background-image: url("../res/images/tile.jpg");
+    background-image: url("../res/images/tile-white.jpg");
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 
 /* Navigation bar */
 
-.navigation {
-    width: 99%;
-    border: 0.05em solid black;
-    margin-bottom: .7em;
-    padding: .3em;
-    border-radius: 0.25em;
-    background-color: rgba(0, 0, 0, 0.6);
+.navigation {}
+
+.banner {
+    background-image: url("../res/images/11-sea-beach-sand-wallpaper.jpg");
+    max-width: 1599px;
+    width: 100%;
+    height: 15em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.banner > h1 {
+    color: #e6b800;
+    text-shadow: 2px 2px grey;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 4em;
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 3em;
+}
+
+@media (max-width: 700px) {
+    .banner > h1 {
+        display: none;
+    }
+    .banner {
+        display: none;
+    }
 }
 
 .navigation > a > .nav-btn {
-    background-color: #00061a;
-    width: 10%;
-    margin: .5em 0.5%;
-    border-top: 0.1em solid black;
-    border-left: 0.1em solid black;
-    border-right: 0.15em solid black;
-    border-bottom: 0.15em solid black;
-    float: right;
-    -webkit-transform: skew(-20deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(-20deg);
-}
-
-.navigation > a >.logo {
-    margin-left: 1%;
-    display: inline-block;
-    color: #e6b800;
-    width: 35%;
-}
-
-.navigation > a >.logo > h1 {
-    font-size: 2.3em;
+    text-shadow: 2px 2px black;
+    float: left;
+    width: 16.666%;
+    text-align: center;
+    background-color: #336699;
+    color: white;
+    padding: .8em 0;
     margin: 0;
+    border-left: .1em solid black;
+    border-right: .1em solid black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    border-bottom-left-radius: 1em;
+}
+
+.nav-right {
+    border-bottom-right-radius: 1em;
 }
 
 a {
@@ -52,9 +71,8 @@ a {
 
 .navigation > a > .nav-btn-active,
 .navigation > a > .nav-btn:hover {
-    background-color: #0099ff;
-    color: black;
-    margin: .7em 0.5%;
+    background-color: #4080bf;
+    color: gold;
 }
 
 
@@ -99,7 +117,8 @@ a {
 }
 
 .all-column {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -108,15 +127,19 @@ a {
 .img-display {
     background-image: url("../res/images/jenniferleahorch.jpg");
     background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 2.5em;
     font-size: 2.5em;
     margin-bottom: 1.5em;
+    margin-top: 1.5em;
     border-radius: .7em;
 }
 
 .img-display h1 {
     color: white;
+    text-shadow: 2px 2px black;
 }
 
 .btn {
@@ -151,16 +174,24 @@ a {
     width: 65%;
     padding: 1em;
     border-radius: .35em;
+    font-size: .75em;
 }
 
 .img-display a {
     color: black;
 }
 
+@media (max-width: 1000px) {
+    .btn-container {
+        font-size: .4em;
+    }
+}
+
 
 /* page items */
 
 .page-heading {
+    text-shadow: 2px 2px black;
     text-align: center;
     margin: 0;
     margin-bottom: .5em;
@@ -170,7 +201,7 @@ a {
 .line {
     width: 100%;
     height: 1px;
-    border-bottom: .1em solid #66a3ff;
+    border-bottom: .1em solid grey;
     margin: 1em 0;
 }
 
@@ -183,12 +214,11 @@ a {
 /* Content panels */
 
 .content-panel {
-    background-image: url("../res/images/tile-dark.jpg");
+    background-color: rgba(0, 77, 77, 0.2);
     border-radius: 0.2em;
-    border: .1em solid #6687ff;
     padding: 0.6em;
     overflow: auto;
-    color: white;
+    color: black;
 }
 
 .flex-panel {
@@ -221,6 +251,7 @@ a {
 }
 
 .content-text > h1 {
+    text-shadow: 2px 2px black;
     margin-bottom: .3em;
     color: #e6b800;
 }
@@ -236,6 +267,7 @@ a {
 }
 
 .content-panel > h1 {
+    text-shadow: 2px 2px black;
     font-size: 1.3em;
 }
 
@@ -244,7 +276,8 @@ a {
     display: block;
     margin-top: 1em;
     width: 20%;
-    background-color: #00061a;
+    background-color: #006666;
+    color: white;
     border-top: 0.1em solid black;
     border-left: 0.1em solid black;
     border-right: 0.15em solid black;
@@ -313,7 +346,7 @@ tr {
 /* footer */
 
 footer {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #336699;
     overflow: auto;
     margin: 3em .5em;
     padding: .5em 2em;
@@ -348,5 +381,6 @@ footer {
 }
 
 .gold-text {
+    text-shadow: 2px 2px black;
     color: #e6b800;
 }
