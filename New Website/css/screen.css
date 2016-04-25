@@ -149,6 +149,15 @@ a {
 	margin: 20px auto;
 	position: relative;
 	 }
+#gallerylinks img {
+	margin: 0 10px;
+	opacity: 5;
+}
+
+.activegallery img {
+	border: blue solid 2px;
+	opacity: 100%;
+}
 
 #img {
 	height: 450px;
@@ -162,7 +171,11 @@ a {
 	position: absolute;
 	left: 0px;
 	top: 0px;
+	opacity: .2;
 	}
+#left_holder:hover {
+	opacity: 10;
+}
 
 #right_holder {
 	height: 450px;
@@ -170,7 +183,11 @@ a {
 	position: absolute;
 	right: 0px;
 	top: 0px;
+	opacity: .2;
 	}
+#right_holder:hover {
+	opacity: 10;
+}
 .left {
 	height: 50px;
 	width: 50px;

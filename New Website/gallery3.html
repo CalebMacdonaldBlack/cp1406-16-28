@@ -12,16 +12,16 @@
     <!--FOR GALLERY-->
 <script type="text/javascript">
 var sequence = 1;
-var numofimages = 9;
+var numofimages = 27;
 
-function rotate(x) {
+function rotate3(x) {
   var Image = document.getElementById('img');
   sequence = sequence + x;
   if(sequence > numofimages){sequence = 1;}
   if(sequence < 1){sequence = numofimages;}
-  Image.src = "Images/slavonicswoon/img"+ sequence +".jpg";
+  Image.src = "Images/lastnightofproms/img"+ sequence +".jpg";
   }
-
+  
 </script>
 </head>
 
@@ -45,24 +45,20 @@ function rotate(x) {
             <!-- Content -->
 
         <h1 class="page-heading">Gallery</h1>
-            <div id="container">
-                <img src="Images/slavonicswoon/img1.jpg" id="img"/>
-                <div id="left_holder"><img onClick="rotate(-1)" class="left" src="images/slavonicswoon/left-arrow-icon1.jpg"/></div>
-                <div id="right_holder"><img onClick="rotate(1)" class="right" src="images/slavonicswoon/right-arrow-icon.jpg"/></div>
-            </div>
-            
-        <div class="line">Line name</div>
+        <a href="gallery1.html"><img src="images/gallery1.jpg" width="200px"/></a>
+        <a href="gallery2.html"><img src="images/gallery2.jpg" width="200px"/></a>
+        <a class="activegallery" href="gallery3.html"><img src="images/gallery3.jpg" width="200px"/></a>
 
-        <div class="content-panel">
-          <h1>Title</h1>
-          <em>Sub title / other info</em>
-          <div class="content-panel-inner">
-            <p>Inner paragraphs</p>
-            <div class="text-center">
-              <button class="btn content-panel-btn-read-more">Read More</button>
+   
+        
+            <div id="container">
+                <img src="Images/lastnightofproms/img1.jpg" id="img"/>
+                <div id="left_holder"><img onClick="rotate3(-1)" class="left" src="images/slavonicswoon/back.jpg"/></div>
+                <div id="right_holder"><img onClick="rotate3(1)" class="right" src="images/slavonicswoon/forward.jpg"/></div>
             </div>
-          </div>
-        </div>
+                     
+            
+            
         <!-- Content -->
         </div>
         <div class="right-column"></div>
