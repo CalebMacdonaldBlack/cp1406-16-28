@@ -143,22 +143,37 @@ a {
 }
 
 /*FOR GALLERY*/
-#container {
+
+#gallerslider {
+	width: 650;
+	float:right;
+	
+}
+	
+#container_gallery {
 	height: 450px;
 	width: 650px;
 	margin: 20px auto;
-	position: relative;
+	position: absolute;
 	 }
-#gallerylinks img {
+#gallerylinks {
+	position: relative;
+	margin: 20 auto;
+}
+	 
+#gallerylinks a img {
 	margin: 0 10px;
-	opacity: 5;
+	opacity: .5;
 }
 
-.activegallery img {
+#gallerylinks .activegallery {
+	opacity:100;
 	border: blue solid 2px;
-	opacity: 100%;
 }
 
+#gallerylinks a img:hover {
+	opacity: 100;
+}
 #img {
 	height: 450px;
 	width: 650px;
@@ -168,10 +183,11 @@ a {
 #left_holder {
 	height: 450px;
 	width: 100px;
-	position: absolute;
+	position:absolute;
 	left: 0px;
 	top: 0px;
 	opacity: .2;
+	
 	}
 #left_holder:hover {
 	opacity: 10;
@@ -180,10 +196,11 @@ a {
 #right_holder {
 	height: 450px;
 	width: 100px;
-	position: absolute;
+	position:inherit;
 	right: 0px;
 	top: 0px;
 	opacity: .2;
+	float: right;
 	}
 #right_holder:hover {
 	opacity: 10;
@@ -202,6 +219,8 @@ a {
 	top: 40%;
 	right: 0px;
 	}
+/*end of gallery css*/
+
 
 .content-panel > img {
   max-width: 100%;
