@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Barrier Reef Orchestra</title>
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/screen.css" media="screen">
+    <link rel="stylesheet" href="css/gallery.css" media="screen">
     <link rel="stylesheet" href="css/handheld.css" media="screen">
 
     <!--FOR GALLERY-->
@@ -14,7 +14,7 @@
 var sequence = 1;
 var numofimages = 27;
 
-function rotate3(x) {
+function rotate(x) {
   var Image = document.getElementById('img');
   sequence = sequence + x;
   if(sequence > numofimages){sequence = 1;}
@@ -26,44 +26,37 @@ function rotate3(x) {
 </head>
 
 <body>
-    <div class="navigation">
-        <div class="logo">
-            <h1>Barrier Reef Orchestra</h1>
-        </div>
-        <div class="nav-btn btn"><a href="#">Events</a></div>
-        <div class="nav-btn btn"><a href="#">Gallary</a></div>
-        <div class="nav-btn btn"><a href="#">Benifactors</a></div>
-        <div class="nav-btn btn"><a href="#">Our People</a></div>
-        <div class="nav-btn btn"><a href="#">About Us</a></div>
+<div class="navigation">
+    <div class="logo">
+        <h1>Barrier Reef Orchestra</h1>
     </div>
-    <div class="row">
-        <div class="all-column">
-        </div>
-        <div class="left-column">
-        </div>
-        <div class="center-column">
-            <!-- Content -->
+    <div class="nav-btn btn"><a href="#">Events</a></div>
+    <div class="nav-btn btn"><a href="#">Gallary</a></div>
+    <div class="nav-btn btn"><a href="#">Benifactors</a></div>
+    <div class="nav-btn btn"><a href="#">Our People</a></div>
+    <div class="nav-btn btn"><a href="#">About Us</a></div>
+</div>
 
-        <h1 class="page-heading">Gallery</h1>
-        <div id="gallerylinks">       
-        <a href="gallery1.html"><img src="images/gallery1.jpg" width="200px"/></a>
-        <a href="gallery2.html"><img src="images/gallery2.jpg" width="200px"/></a>
-        <a href="gallery3.html"><img class="activegallery" src="images/gallery3.jpg" width="200px"/></a>
-		</div>
-   
-        
-            <div id="container">
-                <img src="Images/lastnightofproms/img1.jpg" id="img"/>
-                <div id="left_holder"><img onClick="rotate3(-1)" class="left" src="images/slavonicswoon/back.jpg"/></div>
-                <div id="right_holder"><img onClick="rotate3(1)" class="right" src="images/slavonicswoon/forward.jpg"/></div>
-            </div>
-                     
-            
-            
-        <!-- Content -->
-        </div>
-        <div class="right-column"></div>
+<!-- Content -->
+<div id="content">
+    <h1 class="page-heading">Gallery</h1>
+    <div id="gallerylinks">
+        <a href="gallery1.html"><img  src="images/gallery1.jpg" width="200px"/></a>
+        <a href="gallery2.html"><img  src="images/gallery2.jpg" width="200px"/></a>
+        <a href="gallery3.html"><img class="active" src="images/gallery3.jpg" width="200px"/></a>
     </div>
+    <div id="leftcontent">
+        <div id="slide"> <img class="slidephoto" src="Images/lastnightofproms/img1.jpg" id="img"/></div>
+        <div id="left_holder"><img onClick="rotate(-1)" class="button" src="images/slavonicswoon/back.jpg"/></div>
+        <div id="right_holder"><img onClick="rotate(1)" class="button" src="images/slavonicswoon/forward.jpg"/></div>
+        <div id="slidelabel"><h1>LAST NIGHT OF PROMS 2009</h1></div>
+    </div>
+
+</div>
+
+
+
+
 </body>
 
 </html>
