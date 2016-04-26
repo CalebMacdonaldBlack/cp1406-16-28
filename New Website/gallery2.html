@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Barrier Reef Orchestra</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/screen.css" media="screen">
+    <link rel="stylesheet" href="css/handheld.css" media="screen">
+
+    <!--FOR GALLERY-->
+<script type="text/javascript">
+var sequence = 1;
+var numofimages = 32;
+
+function rotate2(x) {
+  var Image = document.getElementById('img');
+  sequence = sequence + x;
+  if(sequence > numofimages){sequence = 1;}
+  if(sequence < 1){sequence = numofimages;}
+  Image.src = "Images/hotsummernight2008/img"+ sequence +".jpg";
+  }
+  
+</script>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <h1>Barrier Reef Orchestra</h1>
+        </div>
+        <div class="nav-btn btn"><a href="#">Events</a></div>
+        <div class="nav-btn btn"><a href="#">Gallary</a></div>
+        <div class="nav-btn btn"><a href="#">Benifactors</a></div>
+        <div class="nav-btn btn"><a href="#">Our People</a></div>
+        <div class="nav-btn btn"><a href="#">About Us</a></div>
+    </div>
+    <div class="row">
+        <div class="all-column">
+        </div>
+        <div class="left-column">
+        </div>
+        <div class="center-column">
+            <!-- Content -->
+
+        <h1 class="page-heading">Gallery</h1>
+        <div id="gallerylinks">      
+        <a href="gallery1.html"><img src="images/gallery1.jpg" width="200px"/></a>
+        <a href="gallery2.html"><img class="activegallery"  src="images/gallery2.jpg" width="200px"/></a>
+        <a href="gallery3.html"><img src="images/gallery3.jpg" width="200px"/></a>
+  		</div>
+        
+            <div id="container">
+                <img src="Images/hotsummernight2008/img27.jpg" id="img"/>
+                <div id="left_holder"><img onClick="rotate2(-1)" class="left" src="images/slavonicswoon/back.jpg"/></div>
+                <div id="right_holder"><img onClick="rotate2(1)" class="right" src="images/slavonicswoon/forward.jpg"/></div>
+            </div>
+                     
+            
+            
+        <!-- Content -->
+        </div>
+        <div class="right-column"></div>
+    </div>
+</body>
+
+</html>
