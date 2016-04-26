@@ -130,9 +130,8 @@ a {
 
 .img-display {
     background-image: url("../res/images/jenniferleahorch.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 0%;
     text-align: center;
     padding: 2.5em;
     font-size: 2.5em;
@@ -162,12 +161,12 @@ a {
     margin: 2% auto;
 }
 
-.btn-blue {
-    background-color: #0099ff;
-    border-top: 0.05em solid #0066ff;
-    border-left: 0.05em solid #0066ff;
-    border-right: 0.1em solid #0066ff;
-    border-bottom: 0.1em solid #0066ff;
+.btn-orange {
+    background-color: #ffa31a;
+    border-top: 0.05em solid #e68a00;
+    border-left: 0.05em solid #e68a00;
+    border-right: 0.1em solid #e68a00;
+    border-bottom: 0.1em solid #e68a00;
     width: 60%;
     margin: .5% auto;
 }
