@@ -1,0 +1,97 @@
+#banner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 auto;
+
+}
+.bannerpic {
+    width: 80%;
+    height: 20em;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: block;
+}
+.pagetitle {
+    display: block;
+    position: absolute;
+    color: white;
+    text-align: center;
+    right: 40%;
+    top: 0;
+    background: black;
+}
+
+/*special guests*/
+h3 {
+    margin: 2px;
+}
+h4 {margin: 2px;
+}
+p {
+    margin: 2px;
+    font-size: .8em;
+}
+#specialguests {
+    width: 100%;
+    border: black;
+    margin: 0 auto;
+
+}
+#aboutguest {
+    text-align: justify;
+    display: block;
+   /*position: absolute;
+    top: 5em;*/
+    width: 70%;
+    float: left;
+    /*border-top: black solid 2px;*/
+    margin: 25px 10px;
+}
+.guestphoto {
+    width: 15em;
+    height: 15em;
+    border-radius: 100px;
+    margin: 25px 10px;
+    float: left;
+    clear:left;
+    cursor: pointer;
+}
+#guest {
+    width: 100%;
+    margin: 1em auto;
+    /*border-top: black solid 3px;*/
+
+}
+#fulldetails {
+    display: none;
+    padding: 1em;
+    width: 60%;
+    left: 30%;
+}
+
+#guest:hover #fulldetails{
+    display:block;
+    position: fixed;
+    top: 5em;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    clear: all;
+    /*position: fixed;
+    width: 500px;
+    height: 200px;
+    margin: 5% auto;
+    padding: 10px;*/
+}
+#guest:hover #fulldetails img{
+    display: block;
+    margin: 1em auto;
+}
+
+#guest:hover #aboutguest{
+    opacity: .5;
+}
+#guest:hover .guestphoto{
+    opacity: .5;
+}
