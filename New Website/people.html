@@ -7,6 +7,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" media="screen">
     <link rel="stylesheet" href="css/people.css" media="screen">
+    <script src="people.js"></script>
 
 </head>
 
@@ -27,7 +28,7 @@
     <a href="./benifactors.html">
         <div class="nav-btn">Benifactors</div>
     </a>
-    <a href="./our-people.html">
+    <a href="./people.html">
         <div class="nav-btn">Our People</div>
     </a>
     <a href="./about.html">
@@ -38,8 +39,11 @@
 <!--content-->
 
 <div class="row">
+    <div id="pplcontainer">
     <div id="banner">
-        <h1 class="pagetitle">Our People</h1>
+        <h1 class="pagetitle" id="title">Our Special Guests</h1>
+        <div id="left_title"><img src="images/people/play_arrow_right_button_next1.png" onclick="people1()"></div>
+        <div id="right_title"><img src="images/people/play_arrow_right_button_next.png" onclick="people2()"></div>
         <img src="images/slavonicswoon/img8.jpg" alt="orchestra" class="bannerpic">
     </div>
 
@@ -143,7 +147,7 @@
                 <p>Jennifer Bradstreet completed a Bachelor of Music with Honours at the Sydney Conservatorium, before taking up a summer scholarship at St Andrews and Oxford in the UK, and then moving to London in 2010. She became a student at the Royal College of Music under British flautist Susan Milan, and graduated with a Postgraduate Diploma of Performance in 2011.
 
                     <br><br>While in London, she played in side-by-side projects with the London Symphony and was invited onto the prestigious BBC Symphony Orchestral pathway. Many summer scholarships and international master-classes followed, in Germany, England and Italy.
-                    <br>In 2013, Jennifer accepted a Masters scholarship under James Kortum and Aldo Baerten (Belgium) at the Sydney Conservatorium, where she will complete her studies this year. She was a finalist in the 2013 Australian Flute Festival Orchestral Flute Competition and first-prize winner in the 2014 Australian Concerto & Vocal Competition (all instruments). She is active as a soloist and chamber musician, and also performs regularly with the Australian Opera and Ballet Orchestra in Sydney, with whom she has freelanced since 2013.</p>
+                    <br><br>In 2013, Jennifer accepted a Masters scholarship under James Kortum and Aldo Baerten (Belgium) at the Sydney Conservatorium, where she will complete her studies this year. She was a finalist in the 2013 Australian Flute Festival Orchestral Flute Competition and first-prize winner in the 2014 Australian Concerto & Vocal Competition (all instruments). She is active as a soloist and chamber musician, and also performs regularly with the Australian Opera and Ballet Orchestra in Sydney, with whom she has freelanced since 2013.</p>
             </div>
         </div>
         <div id="guest">
@@ -231,7 +235,99 @@
                     <br>Yoshika is currently continuing his studies in Los Angeles as a Doctorate student. Yoshika’s cello is a fine Carl Becker model (1930), loaned to him from a private foundation.</p>
             </div>
         </div>
+        <div id="buttomguest">
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/BlairHarris250.jpg" alt="Blair Harris">
+                <p>Blair Harris</p>
+            </div>
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/DavidLawrence250.jpg." alt="David Lawrence">
+                <p>David Lawrence</p>
+            </div>
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/JamesMorrison250.jpg" alt="James Morrison">
+                <p>James Morrison</p>
+            </div>
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/JiWonKim200.jpg" alt="Ji Won Kim">
+                <p>Ji Won Kim</p>
+            </div>
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/MarkShiell250.jpg" alt="Mark Shiell">
+                <p>Mark Shiell</p>
+            </div>
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/RebeccaChan250.jpg" alt="Rebecca Chan">
+                <p>Rebecca Chan</p>
+            </div>
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/SeanOBoyle234.jpg" alt="Sean O Boyle">
+                <p>Sean O'Boyle</p>
+            </div>
+            <div id="guestnodetails">
+                <img src="images/people/special_guests/StefanCassomenos250.jpg" alt="Stefan Cassomenos">
+                <p>Stefan Cassomenos</p>
+            </div>
+        </div>
 
+    </div>
+    <div id="life_members">
+        <div id="member">
+            <img class="guestphoto" src="images/people/life_members/alan-web.jpg" alt="Alan Web">
+            <div id="about_member">
+                <h3>Alan Nixon</h3>
+                <h4><em>Life Member since May 2015</em></h4>
+                <p>Alan has been Secretary of North Queensland Ensembles Inc. /Barrier Reef Orchestra for eight years.
+                    He is a former Commonwealth Government officer mainly in the Commonwealth Employment Service and prior to retirement he was the Department's Zone Manager for North Queensland. This expertise has served the Orchestra well as Alan has facilitated North Queensland Ensembles becoming incorporated and was also Secretary at the time when we employed our first Orchestra Manager.
+                    Alan has a background in community service having been a member of both Australian Jaycees and Rotary. He has also had long experience as an actor, producer and Committee member with several little theatre groups across the State..</p>
+            </div>
+        </div>
+        <div id="member">
+            <img class="guestphoto" src="images/people/life_members/carol-web.jpg" alt="Carol Web">
+            <div id="about_member">
+                <h3>Carol Dall'Osto</h3>
+                <h4><em>Life Member since July 2010</em></h4>
+                <p>Carol has been a leading figure in music performances in Townsville for many years despite living in Ingham until the early 2000s when she moved to Townsville. Carol is a piano teacher, accompanist, and musical director of the Australian Concerto and Vocal Competition which she has led since 1991.She was involved with the others in the formation of the Barrier Reef Orchestra, and was chairperson of the North Queensland Ensembles Committee (the parent organization for the Orchestra), a position she held until 2003..</p>
+            </div>
+        </div>
+        <div id="member">
+            <img class="guestphoto" src="images/people/life_members/donna-web.jpg" alt="donna Web">
+            <div id="about_member">
+                <h3>Donna McMahon</h3>
+                <h4><em>Life Member since July 2010</em></h4>
+                <p>Donna has been a leader in the Townsville music community since she arrived in 1973 fresh from the Conservatorium to teach strings for Education Queensland. Until 2009 she has also been involved with the Townsville Youth Orchestra, the Australian String Teachers’ Association, the Australian Concerto & Vocal Competition, and lately of course the Barrier Reef Orchestra. Apart from being one of the prime movers in the formation of the BRO, she has been performer, rehearsal conductor, musical advisor, & visiting conductor liaison. In 2009, she was rehearsal conductor, played with the orchestra, and managed the music library. She recently graduated with a Masters Degree in Music from James Cook University.</p>
+            </div>
+        </div>
+        <div id="member">
+        <img class="guestphoto" src="images/people/life_members/jacinta-web.jpg" alt="jacinta Web">
+        <div id="about_member">
+            <h3>Jacinta Payne</h3>
+            <h4><em>Life Member since May 2015</em></h4>
+            <p>Jacinta has been part of the Orchestra from the beginning when she played 1st Clarinet at the first performance on Sunday, 29th October 2000.
+                She has been on the management committee and was a voluntary manager of the Orchestra.
+                Jacinta has had the task of being Rehearsal Conductor on many occasions and conducted a performance in 2004.
+                Over the years, through her teaching she has been able to encourage many players to join the Orchestra and has mentored many young woodwind players.</p>
+        </div>
+        </div>
+        <div id="member">
+            <img class="guestphoto" src="images/people/life_members/jenny-web.jpg" alt="jenny Web">
+            <div id="about_member">
+                <h3>Jenny Carr</h3>
+                <h4><em>Life Member since July 2010</em></h4>
+                <p>Jenny Carr came to Australia from Scotland in the early 70s and instantly became an integral part of the Townsville music scene as a pianist and instrumental music teacher. In 1998 when the decision was made to establish a community orchestra, Jenny worked as librarian, performer and for many years as Manager . In conjunction with Donna McMahon and Susan Linge (from the Civic Theatre), they arranged a series of concerts for the emerging orchestra. She also played with the orchestra when a pianist was needed. As Manager, she was involved in all aspects of handling the orchestra's music and checking attendances. In later years, Jenny worked as Adjudicator’s Assistant for the Australian Vocal and Concerto Competition.</p>
+            </div>
+        </div>
+        <div id="member">
+            <img class="guestphoto" src="images/people/life_members/stephen-web.jpg" alt="stephen Web">
+            <div id="about_member">
+                <h3>Stephen Frewen-Lord</h3>
+                <h4><em>Life Member since May 2015</em></h4>
+                <p>Stephen has been involved with the Barrier Reef Orchestra since its inception; having played as concert master in the orchestra’s inaugural concert in 2000. Since then, he has missed only a couple of Barrier Reef Orchestra concerts, and has been concert master for most concerts.
+                    When not rehearsing with the BRO, Stephen is involved in a number of ensembles around Townsville. He manages and plays with the Melaleuca String Quartet, directed Strings Non Troppo, and plays in Double Play – a guitar/violin duo. Stephen has had regular involvement with the Mulkadee Arts Festival, and performs regularly in community events such as Eco Fiesta, Riverfest, Heritage Day and Stable on the Strand.
+                    In his role as concert master over the past 15 years, Stephen has enjoyed many discussions with guest conductors concerning the artistic direction of the orchestra. As a string teacher, he has encouraged many young string players to become regular members of the orchestra. Stephen loves his involvement with the orchestra, and is delighted to be joined by young players who share his passion for music. Stephen is looking forward to passing on the baton to the next BRO concert master!</p>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
 

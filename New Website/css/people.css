@@ -1,12 +1,16 @@
+#pplcontainer {
+    width: 80%;
+    /*background-color: white;*/
+    margin: 0 auto;
+}
 #banner {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
-    padding: 0 auto;
-
+    background-color: black;
 }
 .bannerpic {
-    width: 80%;
+    width: 90%;
     height: 20em;
     margin: 0 auto;
     padding: 0 auto;
@@ -17,9 +21,42 @@
     position: absolute;
     color: white;
     text-align: center;
-    right: 40%;
-    top: 0;
+    width: 100%;
+    top: 7em;
     background: black;
+    padding: .5em 0;
+}
+#left_title {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 10em;
+    left: 1%;
+    opacity: .5;
+}
+#left_title img {
+    width: 3em;
+    height: 3em;
+}
+#left_title:hover {
+    cursor: pointer;
+    opacity:1;
+}
+#right_title {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 10em;
+    right: 2%;
+    opacity: .5;
+}
+#right_title:hover {
+    cursor: pointer;
+    opacity:1;
+}
+#right_title img {
+    width: 3em;
+    height: 3em;
 }
 
 /*special guests*/
@@ -30,7 +67,7 @@ h4 {margin: 2px;
 }
 p {
     margin: 2px;
-    font-size: .8em;
+    font-size: 1em;
 }
 #specialguests {
     width: 100%;
@@ -39,28 +76,36 @@ p {
 
 }
 #aboutguest {
+    width: 65%;
     text-align: justify;
     display: block;
    /*position: absolute;
     top: 5em;*/
-    width: 70%;
     float: left;
     /*border-top: black solid 2px;*/
     margin: 25px 10px;
+    margin-left: 2em;
 }
 .guestphoto {
-    width: 15em;
-    height: 15em;
+    width: 20%;
+    /*height: 20%;*/
     border-radius: 100px;
     margin: 25px 10px;
     float: left;
     clear:left;
     cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 #guest {
-    width: 100%;
-    margin: 1em auto;
+    width: 80%;
+    margin: .5em auto;
     /*border-top: black solid 3px;*/
+    background-color: white;
+    display: block;
+    border: black solid 2px;
+    overflow: auto;
+    /*float: left;*/
+    border-radius: 10px;
 
 }
 #fulldetails {
@@ -68,16 +113,20 @@ p {
     padding: 1em;
     width: 60%;
     left: 30%;
-}
-
-#guest:hover #fulldetails{
-    display:block;
     position: fixed;
-    top: 5em;
-    background-color: white;
+    top: 10em;
+    background-color: gray;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
     clear: all;
+}
+#fulldetails p {
+    color: white;
+    text-align: justify;
+}
+#guest:hover #fulldetails {
+    display:block;
+
     /*position: fixed;
     width: 500px;
     height: 200px;
@@ -87,11 +136,60 @@ p {
 #guest:hover #fulldetails img{
     display: block;
     margin: 1em auto;
+    width: 20em;
+    height: 20em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 #guest:hover #aboutguest{
     opacity: .5;
 }
+
 #guest:hover .guestphoto{
     opacity: .5;
 }
+
+#guestnodetails img{
+    width: 8em;
+    height: 8em;
+}
+#guestnodetails {
+    display: block;
+    float: left;
+    margin-left: 3px;
+}
+#guestnodetails p {
+    font-size: .7em;
+    text-align: center;
+}
+#buttomguest {
+    width: 80%;
+    margin: 0 auto;
+}
+#life_members {
+    width: 100%;
+    border: black;
+    margin: 0 auto;
+    display: none;
+}
+#member {
+    width: 80%;
+    margin: .5em auto;
+    /*border-top: black solid 3px;*/
+    background-color: white;
+    display: block;
+    border: black solid 2px;
+    overflow: auto;
+    /*float: left;*/
+    border-radius: 10px;
+}
+#about_member {
+    width: 65%;
+    text-align: justify;
+    display: block;
+    /*position: absolute;
+     top: 5em;*/
+    float: left;
+    /*border-top: black solid 2px;*/
+    margin: 25px 10px;
+    margin-left: 2em;
