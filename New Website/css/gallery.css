@@ -1,0 +1,231 @@
+#gallery_groups p {
+    color: white;
+    border: white solid 1px;
+    background-color: gray;
+    border-radius: 3px;
+    display: inline;
+    width: 12em;
+    padding: 3px;
+    text-align: center;
+    font-size: .7em;
+    position: absolute;
+
+}
+#gallery_groups p:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.p1 {
+    left: 3em;
+}
+.p3 {right: 3em;
+}
+.p2 {left: 40%;
+}
+#gallery_groups {
+    margin: 0 auto;
+    position: relative;
+    top: 2em;
+    display: block;
+    width: 100%;
+    height: 2em;
+    overflow: auto;
+}
+#gallery {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    background-color: black;
+    overflow: auto;
+}
+#left img {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+#left img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#left {
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    left: 8%;
+    top: 10em;
+}
+#right img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+}
+#right img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#right {
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    right: 8%;
+    top: 10em;
+}
+
+#slide {
+    width: 60%;
+    height: 30em    ;
+    margin-top: 3em;
+    float:right;
+    display: block;
+    position: relative;
+    border: white solid 2px;
+    overflow: auto;
+    padding: 1em;
+}
+#slide img {
+    dislay: block;
+    width: 500px;
+    height: 350px;
+    /*width: 80%;
+    height: 80%;
+    /*top: 5em;
+    left: 10%;*/
+    margin: 0 auto;
+}
+
+#gallery_slide {
+    background-color: black;
+    width: 80%;
+    height: 30em;
+    overflow: auto;
+    margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+#slideimage   {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    border: white solid;
+    height: 20em;
+    top: 2em;
+}
+#slideimage .slidephoto {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#slidelabel {
+    position: relative;
+    margin: 0 auto;
+    top: 2em;
+   }
+#slidelabel h3 {
+    color: white;
+    text-align: center;
+}
+
+#gallery_thumbnails img {
+    width: 8em;
+    height: 5em;
+    display: block;
+    float: left;
+    margin: .5em;
+    position: relative;
+    border: white solid 1px;
+    border-radius: 10px;
+    opacity: .5;
+}
+#gallery_thumbnails img:hover {
+    opacity: 1;
+    border: white solid 1px;
+    cursor: pointer;
+}
+#gallery_thumbnails {
+    /*width: 90%;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+    width: 98%;
+    padding: 10px;
+
+}
+/*last_night_of_proms*/
+#gallery_thumbnails_lastnight img {
+    width: 8em;
+    height: 5em;
+    display: block;
+    float: left;
+    margin: .5em;
+    position: relative;
+    border: white solid 1px;
+    border-radius: 10px;
+    opacity: .5;
+}
+#gallery_thumbnails_lastnight img:hover {
+    opacity: 1;
+    border: white solid 1px;
+    cursor: pointer;
+}
+#gallery_thumbnails_lastnight {
+    /*width: 90%;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+    width: 98%;
+    padding: 10px;
+    display: none;
+}
+/*slavonicswoon*/
+#gallery_thumbnails_slavonicswoon img {
+    width: 8em;
+    height: 5em;
+    display: block;
+    float: left;
+    margin: .5em;
+    position: relative;
+    border: white solid 1px;
+    border-radius: 10px;
+    opacity: .5;
+}
+#gallery_thumbnails_slavonicswoon img:hover {
+    opacity: 1;
+    border: white solid 1px;
+    cursor: pointer;
+}
+#gallery_thumbnails_slavonicswoon {
+    /*width: 90%;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+    width: 98%;
+    padding: 10px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
