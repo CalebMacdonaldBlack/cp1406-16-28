@@ -1,7 +1,7 @@
 #gallery_groups p {
-    color: white;
-    border: white solid 1px;
-    background-color: gray;
+    color: black;
+    border: gray solid 1px;
+    background-color: white;
     border-radius: 3px;
     display: inline;
     width: 12em;
@@ -13,14 +13,19 @@
 }
 #gallery_groups p:hover {
     cursor: pointer;
-    opacity: 1;
+    background-color: gray;
+    color: white;
+    border: white solid 1px;
 }
 .p1 {
     left: 3em;
+    opacity: 1;
 }
 .p3 {right: 3em;
+    opacity: .5;
 }
 .p2 {left: 40%;
+    opacity: .5;
 }
 #gallery_groups {
     margin: 0 auto;
@@ -130,7 +135,8 @@
     text-align: center;
 }
 
-#gallery_thumbnails img {
+/*slavonicswoon*/
+#gallery_thumbnails_slavonicswoon img {
     width: 8em;
     height: 5em;
     display: block;
@@ -141,19 +147,45 @@
     border-radius: 10px;
     opacity: .5;
 }
-#gallery_thumbnails img:hover {
+#gallery_thumbnails_slavonicswoon img:hover {
     opacity: 1;
     border: white solid 1px;
     cursor: pointer;
 }
-#gallery_thumbnails {
+#gallery_thumbnails_slavonicswoon {
     /*width: 90%;*/
     margin: 0 auto;
     position: relative;
     overflow: auto;
     width: 98%;
     padding: 10px;
-
+    display: block;
+}
+/*hotsummernight*/
+#gallery_thumbnails_hotsummer img {
+    width: 8em;
+    height: 5em;
+    display: block;
+    float: left;
+    margin: .5em;
+    position: relative;
+    border: white solid 1px;
+    border-radius: 10px;
+    opacity: .5;
+}
+#gallery_thumbnails_hotsummer img:hover {
+    opacity: 1;
+    border: white solid 1px;
+    cursor: pointer;
+}
+#gallery_thumbnails_hotsummer {
+    /*width: 90%;*/
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+    width: 98%;
+    padding: 10px;
+    display: none;
 }
 /*last_night_of_proms*/
 #gallery_thumbnails_lastnight img {
@@ -173,32 +205,6 @@
     cursor: pointer;
 }
 #gallery_thumbnails_lastnight {
-    /*width: 90%;*/
-    margin: 0 auto;
-    position: relative;
-    overflow: auto;
-    width: 98%;
-    padding: 10px;
-    display: none;
-}
-/*slavonicswoon*/
-#gallery_thumbnails_slavonicswoon img {
-    width: 8em;
-    height: 5em;
-    display: block;
-    float: left;
-    margin: .5em;
-    position: relative;
-    border: white solid 1px;
-    border-radius: 10px;
-    opacity: .5;
-}
-#gallery_thumbnails_slavonicswoon img:hover {
-    opacity: 1;
-    border: white solid 1px;
-    cursor: pointer;
-}
-#gallery_thumbnails_slavonicswoon {
     /*width: 90%;*/
     margin: 0 auto;
     position: relative;
