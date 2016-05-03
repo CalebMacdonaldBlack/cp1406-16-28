@@ -249,6 +249,10 @@ a {
     margin-left: 1em;
 }
 
+.full-width {
+    width: 99%;
+}
+
 .content-panel-inner {
     margin-left: 1em;
 }
@@ -287,7 +291,17 @@ a {
     border-bottom: 0.15em solid black;
 }
 
+/* forms */
+textarea, input {
+    border-radius: .4em;
+    font-size: 1em;
+}
 
+.form-table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
 /*FOR GALLERY*/
 
 #container {
@@ -335,14 +349,14 @@ a {
     right: 0px;
 }
 
-table {
+.donators-table {
     width: 35%;
     margin: 0 auto;
     border-collapse: collapse;
 }
 
-tr {
-    border-bottom: .1em solid #66a3ff;
+.donators-table tr {
+    border-bottom: .1em solid lightgrey;
 }
 
 
