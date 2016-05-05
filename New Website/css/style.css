@@ -197,7 +197,7 @@ a {
     text-shadow: 2px 2px black;
     text-align: center;
     margin: 0;
-    margin-bottom: .5em;
+    margin: .5em 0;
     color: #e6b800;
 }
 
@@ -250,7 +250,7 @@ a {
 }
 
 .full-width {
-    width: 99%;
+    width: 95%;
 }
 
 .content-panel-inner {
@@ -295,6 +295,19 @@ a {
 textarea, input {
     border-radius: .4em;
     font-size: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+form {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-right: 2.5em;
+}
+
+.input-container {
+width: 70%;
+margin: 0 auto;
 }
 
 .form-table {
