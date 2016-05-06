@@ -291,6 +291,20 @@ a {
     border-bottom: 0.15em solid black;
 }
 
+.btn-submit {
+    margin: 0 auto;
+    display: block;
+    margin-top: 1em;
+    width: 20%;
+    background-color: #006666;
+    color: white;
+    border-top: 0.1em solid black;
+    border-left: 0.1em solid black;
+    border-right: 0.15em solid black;
+    border-bottom: 0.15em solid black;
+    font-size: 1em;
+}
+
 /* forms */
 textarea, input {
     border-radius: .4em;
@@ -314,6 +328,14 @@ margin: 0 auto;
     width: 70%;
     margin: 0 auto;
     border-collapse: collapse;
+}
+
+.error {
+    font-weight: 2;
+    color: red;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2em;
 }
 /*FOR GALLERY*/
 

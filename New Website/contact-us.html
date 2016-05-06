@@ -6,6 +6,7 @@
     <title>Barrier Reef Orchestra</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" media="screen">
+    <script type="text/javascript" src="./javascript/script.js"></script>
 
 </head>
 
@@ -58,23 +59,26 @@
                     <h1 class="center-text">Send us a message</h1>
                     <div class="line"></div>
                     <div class="content-panel-inner">
-                        <form name="htmlform" method="post" action="#">
+                        <form action="javascript:submitContactUs();">
                             <div class="input-container">
+                                <label class="error center-text" id="errorLabel"></label>
+                                <br>
                                 <label>* First Name:</label>
-                                <input class="text-input" type="text">
+                                <input class="text-input" type="text" id="firstName">
                                 <br>
                                 <label>* Last Name:</label>
-                                <input type="text">
+                                <input type="text" id="lastName">
                                 <br>
                                 <label>* Email Address:</label>
-                                <input type="text">
+                                <input type="email" id="email">
                                 <br>
                                 <label> Phone:</label>
-                                <input type="text">
+                                <input type="text" id="phone">
                                 <br>
                                 <label>* Comments:</label>
                             </div>
-                            <textarea maxlength="1000" rows="6"></textarea>    
+                            <textarea maxlength="1000" rows="6" id="comment"></textarea>
+                            <input type="submit" value="Submit" class="btn btn-submit"> 
                         </form>
                     </div>
                 </div>
