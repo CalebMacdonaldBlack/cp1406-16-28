@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Barrier Reef Orchestra</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script type="text/javascript" src="./javascript/script.js"></script>
+
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Barrier Reef Orchestra</h1>
+    </div>
+    <div class="navigation">
+        <a href="./index.html">
+            <div class="nav-btn nav-btn-active nav-left">Home</div>
+        </a>
+        <a href="./events.html">
+            <div class="nav-btn">Past Events</div>
+        </a>
+        <a href="./gallery.html">
+            <div class="nav-btn">Gallary</div>
+        </a>
+        <a href="./benifactors.html">
+            <div class="nav-btn">Benifactors</div>
+        </a>
+        <a href="./our-people.html">
+            <div class="nav-btn">Our People</div>
+        </a>
+        <a href="./about.html">
+            <div class="nav-btn nav-right">About Us</div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="all-column">
+        </div>
+        <div class="left-column">
+        </div>
+        <div class="center-column">
+            <!-- Content -->
+            <h1 class="page-heading">Contact Us</h1>
+            <div class="content-panel">
+                <div class="content-text full-width">
+                    <h1>Would you like to help out the orchestra?</h1>
+                    <div class="line"></div>
+                    <div class="content-panel-inner">
+                        <h2>
+                            Interested in becoming a member of, or a player in, the Orchestra? <br>
+                            Would you like to sponsor or donate to the orchestra?
+                        </h2>
+                        <p>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="content-panel">
+                <div class="content-text full-width">
+                    <h1 class="center-text">Send us a message</h1>
+                    <div class="line"></div>
+                    <div class="content-panel-inner">
+                        <form name="ContactUs" action="#" onsubmit="return validateContactUs()" method="post">
+                            <div class="input-container">
+                                <label class="error red-text" id="errorLabel"></label>
+                                <br>
+                                <label>Name <span class="red-text">*</span>:</label>
+                                <input class="text-input" type="text" id="name">
+                                <br>
+                                <label>Email Address <span class="red-text">*</span>:</label>
+                                <input type="email" id="email">
+                                <br>
+                                <label> Phone:</label>
+                                <input type="tel" id="phone">
+                                <br>
+                                <label>Comments <span class="red-text">*</span>:</label>
+                            </div>
+                            <textarea maxlength="1000" rows="6" id="comment"></textarea>
+                            <input type="submit" value="Submit" class="btn btn-submit"> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+        </div>
+        <div class="right-column"></div>
+    </div>
+    <footer>
+        <div class="center-text">
+            <h1 class="gold-text">Sponsors</h1>
+        </div>
+        <div class="sponsor-container">
+            <div class="sponsor">
+                <a href="https://www.townsville.qld.gov.au/"><img src="./res/images/townsville-council-logo.jpg"></a>
+            </div>
+            <div class="sponsor">
+                <a href="http://www.acvc.com.au/"><img src="./res/images/ACVClogo.jpg"></a>
+            </div>
+            <div class="sponsor">
+                <a href=""><img src="./res/images/asap-logo.png"></a>
+            </div>
+            <div class="sponsor">
+                <a href="http://www.afcm.com.au/"><img src="./res/images/AFCMlogo-25th.gif"></a>
+            </div>
+            <div class="sponsor">
+                <a href="http://www.signsofexcellence.com.au/"><img src="./res/images/SOE-logo.jpg"></a>
+            </div>
+            <div class="sponsor">
+                <a href=""><img src="./res/images/GG-logo.jpg"></a>
+            </div>
+            <div class="sponsor">
+                <a href="http://www.sturtbc.com.au/"><img src="./res/images/sturt-business-centre-logo.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
