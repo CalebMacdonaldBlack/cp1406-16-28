@@ -26,19 +26,10 @@ body {
     color: #e6b800;
     text-shadow: 2px 2px grey;
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 4em;
+    font-size: 60px;
     margin: 0;
     padding-top: 1em;
     padding-left: 3em;
-}
-
-@media (max-width: 700px) {
-    .banner > h1 {
-        display: none;
-    }
-    .banner {
-        display: none;
-    }
 }
 
 .navigation > a > .nav-btn {
@@ -103,23 +94,6 @@ a {
     float: left;
 }
 
-@media (min-width: 1000px) {
-    .left-column {
-        width: 15%;
-        height: 1px;
-        float: left;
-    }
-    .right-column {
-        width: 15%;
-        height: 1px;
-        float: left;
-    }
-    .center-column {
-        width: 70%;
-        float: left;
-    }
-}
-
 .all-column {
     width: 90%;
     margin: 0 auto;
@@ -133,8 +107,8 @@ a {
     background-size: cover;
     background-position: 30% 0%;
     text-align: center;
-    padding: 2.5em;
-    font-size: 2.5em;
+    padding: 2em 0;
+    font-size: 35px;
     margin-bottom: 1.5em;
     margin-top: 1.5em;
     border-radius: .7em;
@@ -158,6 +132,7 @@ a {
     border-right: 0.1em solid #66cc00;
     border-bottom: 0.1em solid #66cc00;
     width: 60%;
+    min-width: 230px;
     margin: 2% auto;
 }
 
@@ -168,7 +143,10 @@ a {
     border-right: 0.1em solid #e68a00;
     border-bottom: 0.1em solid #e68a00;
     width: 60%;
+    min-width: 230px;
     margin: .5% auto;
+    display: inline-block;
+    margin-bottom: .7em;
 }
 
 .btn-container {
@@ -178,6 +156,7 @@ a {
     padding: 1em;
     border-radius: .35em;
     font-size: .75em;
+    padding-bottom: 2em;
 }
 
 .img-display a {
@@ -186,9 +165,55 @@ a {
 
 @media (max-width: 1000px) {
     .btn-container {
-        font-size: .4em;
+        padding: 0;
     }
 }
+
+@media (max-width: 700px) {
+    .banner > h1 {
+        display: none;
+    }
+    .banner {
+        display: none;
+    }
+}
+
+@media (max-width: 470px) {
+    .img-display {
+        font-size: 25px;
+        color: red;
+        padding: .5em;
+    }
+    .btn-green {
+        min-width: 150px;
+    }
+    .btn-orange {
+        min-width: 150px;
+    }
+    .btn-container {
+        min-width: 165px;
+    }
+}
+
+
+/*
+@media (min-width: 1000px) {
+    .left-column {
+        width: 15%;
+        height: 1px;
+        float: left;
+    }
+    .right-column {
+        width: 15%;
+        height: 1px;
+        float: left;
+    }
+    .center-column {
+        width: 70%;
+        float: left;
+    }
+}
+*/
 
 
 /* page items */
@@ -222,6 +247,7 @@ a {
     padding: 0.6em;
     overflow: auto;
     color: black;
+    margin-bottom: 2em;
 }
 
 .flex-panel {
@@ -283,6 +309,7 @@ a {
     display: block;
     margin-top: 1em;
     width: 20%;
+    min-width: 5em;
     background-color: #006666;
     color: white;
     border-top: 0.1em solid black;
@@ -305,8 +332,11 @@ a {
     font-size: 1em;
 }
 
+
 /* forms */
-textarea, input {
+
+textarea,
+input {
     border: none;
     background-color: rgba(0, 77, 77, 0.05);
     font-size: 1em;
@@ -317,6 +347,7 @@ textarea, input {
 input {
     border-bottom: .1em dotted grey;
 }
+
 form {
     width: 60%;
     margin: 0 auto;
@@ -324,9 +355,8 @@ form {
 }
 
 .input-container {
-width: 70%;
+    width: 70%;
 }
-
 
 .error {
     font-weight: 2;
@@ -334,6 +364,8 @@ width: 70%;
     display: inline-block;
     margin-bottom: 2em;
 }
+
+
 /*FOR GALLERY*/
 
 #container {
@@ -397,9 +429,10 @@ width: 70%;
 footer {
     background-color: #336699;
     overflow: auto;
-    margin: 3em .5em;
-    padding: .5em 2em;
+    margin: 3em auto;
     border-radius: .3em;
+    padding: .8em 4%;
+    width: 92%;
 }
 
 .sponsor > a > img {
@@ -420,6 +453,29 @@ footer {
     border-radius: .3em;
     padding: .3em 0;
     margin-bottom: 1em;
+}
+
+.footer-column {
+    display: inline-block;
+    width: 32%;
+    min-width: 500px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column a,
+.footer-column a:visited {
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    color: lightgrey;
+}
+
+.footer-column a:hover,
+.footer-column a:focus,
+.footer-column a:active {
+    color: gold;
 }
 
 
