@@ -7,15 +7,19 @@ body {
 
 /* Navigation bar */
 
-.navigation {}
+.navigation {
+    max-width: 1599px;
+    margin: 0 auto;
+}
 
 .banner {
     background-image: url("../res/images/11-sea-beach-sand-wallpaper.jpg");
-    max-width: 1599px;
+    max-width: 1598px;
     width: 100%;
     height: 15em;
     border-top-left-radius: .5em;
     border-top-right-radius: .5em;
+    margin: 0 auto;
 }
 
 .banner > h1 {
@@ -126,9 +130,8 @@ a {
 
 .img-display {
     background-image: url("../res/images/jenniferleahorch.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 0%;
     text-align: center;
     padding: 2.5em;
     font-size: 2.5em;
@@ -155,15 +158,15 @@ a {
     border-right: 0.1em solid #66cc00;
     border-bottom: 0.1em solid #66cc00;
     width: 60%;
-    margin: .5% auto;
+    margin: 2% auto;
 }
 
-.btn-blue {
-    background-color: #0099ff;
-    border-top: 0.05em solid #0066ff;
-    border-left: 0.05em solid #0066ff;
-    border-right: 0.1em solid #0066ff;
-    border-bottom: 0.1em solid #0066ff;
+.btn-orange {
+    background-color: #ffa31a;
+    border-top: 0.05em solid #e68a00;
+    border-left: 0.05em solid #e68a00;
+    border-right: 0.1em solid #e68a00;
+    border-bottom: 0.1em solid #e68a00;
     width: 60%;
     margin: .5% auto;
 }
@@ -194,7 +197,7 @@ a {
     text-shadow: 2px 2px black;
     text-align: center;
     margin: 0;
-    margin-bottom: .5em;
+    margin: .5em 0;
     color: #e6b800;
 }
 
@@ -246,6 +249,10 @@ a {
     margin-left: 1em;
 }
 
+.full-width {
+    width: 95%;
+}
+
 .content-panel-inner {
     margin-left: 1em;
 }
@@ -284,7 +291,49 @@ a {
     border-bottom: 0.15em solid black;
 }
 
+.btn-submit {
+    margin: 0 auto;
+    display: block;
+    margin-top: 1em;
+    width: 20%;
+    background-color: #006666;
+    color: white;
+    border-top: 0.1em solid black;
+    border-left: 0.1em solid black;
+    border-right: 0.15em solid black;
+    border-bottom: 0.15em solid black;
+    font-size: 1em;
+}
 
+/* forms */
+textarea, input {
+    border: none;
+    background-color: rgba(0, 77, 77, 0.05);
+    font-size: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+input {
+    border-bottom: .1em dotted grey;
+}
+form {
+    width: 60%;
+    margin: 0 auto;
+    padding-right: 2.5em;
+}
+
+.input-container {
+width: 70%;
+}
+
+
+.error {
+    font-weight: 2;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2em;
+}
 /*FOR GALLERY*/
 
 #container {
@@ -332,14 +381,14 @@ a {
     right: 0px;
 }
 
-table {
+.donators-table {
     width: 35%;
     margin: 0 auto;
     border-collapse: collapse;
 }
 
-tr {
-    border-bottom: .1em solid #66a3ff;
+.donators-table tr {
+    border-bottom: .1em solid lightgrey;
 }
 
 
@@ -383,4 +432,8 @@ footer {
 .gold-text {
     text-shadow: 2px 2px black;
     color: #e6b800;
+}
+
+.red-text {
+    color: red;
 }

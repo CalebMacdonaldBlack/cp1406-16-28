@@ -6,6 +6,7 @@
     <title>Barrier Reef Orchestra</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" media="screen">
+    <script type="text/javascript" src="./javascript/script.js"></script>
 
 </head>
 
@@ -40,18 +41,44 @@
         </div>
         <div class="center-column">
             <!-- Content -->
-            <h1 class="page-heading">Events</h1>
+            <h1 class="page-heading">Contact Us</h1>
             <div class="content-panel">
-                <div class="content-img">
-                    <img class="content-panel-image" src="./res/images/BronwynDouglass01.jpg">
-                </div>
-                <div class="content-text">
-                    <h1>Example</h1>
-                    <em>Townsville Civic Theatre, 2nd April 7.30 pm </em>
+                <div class="content-text full-width">
+                    <h1>Would you like to help out the orchestra?</h1>
                     <div class="line"></div>
                     <div class="content-panel-inner">
-                        Example Example Example Example Example Example Example Example
-                        <div class="btn btn-read-more">Read More</div>
+                        <h2>
+                            Interested in becoming a member of, or a player in, the Orchestra? <br>
+                            Would you like to sponsor or donate to the orchestra?
+                        </h2>
+                        <p>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="content-panel">
+                <div class="content-text full-width">
+                    <h1 class="center-text">Send us a message</h1>
+                    <div class="line"></div>
+                    <div class="content-panel-inner">
+                        <form name="ContactUs" action="#" onsubmit="return validateContactUs()" method="post">
+                            <div class="input-container">
+                                <label class="error red-text" id="errorLabel"></label>
+                                <br>
+                                <label>Name <span class="red-text">*</span>:</label>
+                                <input class="text-input" type="text" id="name">
+                                <br>
+                                <label>Email Address <span class="red-text">*</span>:</label>
+                                <input type="email" id="email">
+                                <br>
+                                <label> Phone:</label>
+                                <input type="tel" id="phone">
+                                <br>
+                                <label>Comments <span class="red-text">*</span>:</label>
+                            </div>
+                            <textarea maxlength="1000" rows="6" id="comment"></textarea>
+                            <input type="submit" value="Submit" class="btn btn-submit"> 
+                        </form>
                     </div>
                 </div>
             </div>
