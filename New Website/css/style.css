@@ -296,6 +296,7 @@ a {
     display: block;
     margin-top: 1em;
     width: 20%;
+    min-width: 8em;
     background-color: #006666;
     color: white;
     border-top: 0.1em solid black;
@@ -305,8 +306,11 @@ a {
     font-size: 1em;
 }
 
+
 /* forms */
-textarea, input {
+
+textarea,
+input {
     border: none;
     background-color: rgba(0, 77, 77, 0.05);
     font-size: 1em;
@@ -317,6 +321,7 @@ textarea, input {
 input {
     border-bottom: .1em dotted grey;
 }
+
 form {
     width: 60%;
     margin: 0 auto;
@@ -324,9 +329,9 @@ form {
 }
 
 .input-container {
-width: 70%;
+    width: 70%;
+    margin: 0 auto;
 }
-
 
 .error {
     font-weight: 2;
@@ -334,6 +339,14 @@ width: 70%;
     display: inline-block;
     margin-bottom: 2em;
 }
+
+.radio-container {}
+
+.radio-container input {
+    width: 1em;
+}
+
+
 /*FOR GALLERY*/
 
 #container {
