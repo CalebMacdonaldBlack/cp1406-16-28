@@ -346,6 +346,10 @@ form {
     width: 1em;
 }
 
+#benifactorSection {
+    display: none;
+}
+
 
 /*FOR GALLERY*/
 

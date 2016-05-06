@@ -35,9 +35,9 @@ function validateContribute() {
 
     var errorLabel = document.getElementById('errorLabel');
 
-    if (!contribution.value && contribution.value < 200) {
+    if (!contribution.value) {
         contribution.value = '';
-        errorLabel.innerHTML = 'You must enter an amount of atleast $200 or more.';
+        errorLabel.innerHTML = 'You must enter an contribution amount.';
         return false;
     } else if (!payment) {
         errorLabel.innerHTML = 'Please select a payment option.';
@@ -115,5 +115,16 @@ function benifactorNameTyped() {
         anonymousSection.setAttribute('style', 'display:none');
     } else {
         anonymousSection.setAttribute('style', 'display:block');
+    }
+}
+
+function contributionNameTyped() {
+    var contribution = document.getElementById('contribution');
+    var benifactorSection = document.getElementById('benifactorSection');
+
+    if (contribution.value >= 200) {
+        benifactorSection.setAttribute('style', 'display:block');
+    } else {
+        benifactorSection.setAttribute('style', 'display:none');
     }
 }
