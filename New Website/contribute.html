@@ -66,9 +66,9 @@
                                 <br>
                                 <label>Payment method<span class="red-text">*</span>:</label>
                                 <div class="radio-container" id="paymentContainer">
-                                    <input type="radio" name="payment" value="cheque"> Cheque
-                                    <input type="radio" name="payment" value="cash"> Cash
-                                    <input type="radio" name="payment" value="other"> Eftpos
+                                    <input type="radio" name="payment" value="cheque" onclick="paymentClicked()"> Cheque
+                                    <input type="radio" name="payment" value="cash" onclick="paymentClicked()"> Cash
+                                    <input type="radio" name="payment" value="eftpos" onclick="paymentClicked()"> Eftpos
                                 </div>
                                 <label>Display me on the benifactor roll as :</label>
                                 <input type="text" id="benifactorName" onkeydown="benifactorNameTyped()" onpaste="benifactorNameTyped()" oninput="benifactorNameTyped()">
@@ -89,8 +89,7 @@
                                 <input type="tel" id="phone">
                                 <br>
                                 <label> Mobile:</label>
-                                <input type="tel" id="mobile">
-                                <input type="submit" value="Submit" class="btn btn-submit"> 
+                                <input type="tel" id="mobile"><input type="submit" value="Submit" class="btn btn-submit" id="submitButton"> 
                             </div>
                         </form>
                     </div>

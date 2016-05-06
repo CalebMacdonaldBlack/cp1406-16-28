@@ -54,6 +54,17 @@ function validateContribute() {
     alert('Sent!')
 }
 
+function paymentClicked() {
+    var payment = getSelectedRadioButton(document.getElementById('paymentContainer').children);
+    var submitButton = document.getElementById('submitButton');
+
+    if (payment === 'eftpos') {
+        submitButton.value = 'Send Email';
+    } else {
+        submitButton.value = 'Print for mailing';
+    }
+}
+
 function getSelectedRadioButton(inputs) {
     if (!inputs) return;
     for (var i = 0; i < inputs.length; i++) {
