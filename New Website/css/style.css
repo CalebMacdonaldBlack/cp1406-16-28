@@ -307,13 +307,17 @@ a {
 
 /* forms */
 textarea, input {
-    border-radius: .4em;
+    border: none;
+    background-color: rgba(0, 77, 77, 0.05);
     font-size: 1em;
     margin-bottom: 1em;
     width: 100%;
 }
+
+input {
+    border-bottom: .1em dotted grey;
+}
 form {
-    text-align: center;
     width: 60%;
     margin: 0 auto;
     padding-right: 2.5em;
@@ -321,18 +325,11 @@ form {
 
 .input-container {
 width: 70%;
-margin: 0 auto;
 }
 
-.form-table {
-    width: 70%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
 
 .error {
     font-weight: 2;
-    color: red;
     width: 100%;
     display: inline-block;
     margin-bottom: 2em;
@@ -435,4 +432,8 @@ footer {
 .gold-text {
     text-shadow: 2px 2px black;
     color: #e6b800;
+}
+
+.red-text {
+    color: red;
 }

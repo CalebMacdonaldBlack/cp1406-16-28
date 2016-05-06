@@ -1,28 +1,27 @@
-function submitContactUs(){
-  var firstNameInput = document.getElementById('firstName');
-  var lastNameInput = document.getElementById('lastName');
+function validateContactUs(){
+  var nameInput = document.getElementById('name');
   var emailInput = document.getElementById('email');
   var phoneInput = document.getElementById('phone');
   var commentInput = document.getElementById('comment');
   var errorLabel = document.getElementById('errorLabel');
-  
 
-  if(!firstNameInput.value)
-    errorLabel.innerHTML = 'You must enter a first name!'
-  else if(!lastNameInput.value)
-    errorLabel.innerHTML = 'You must enter a last name!'
-  else if(!validateEmail(emailInput.value))
-    errorLabel.innerHTML = 'You must enter a valid email address!'
-  else if(!commentInput.value)
-    errorLabel.innerHTML = 'You must type a message to send!'
-  else
-    errorLabel.innerHTML = ''
 
+  if(!nameInput.value){
+    errorLabel.innerHTML = 'You must enter your name!';
+    return false;
+  }else if(!isValidEmail(emailInput.value)){
+    errorLabel.innerHTML = 'You must enter a valid email address!';
+    return false;
+  }else if(!commentInput.value){
+    errorLabel.innerHTML = 'You must type a message to send!';
+    return false;
+  }else{
+    errorLabel.innerHTML = '';
+  }
   alert('Sent!')
-
 }
 
-function validateEmail(email) {
+function isValidEmail(email) {
     var atpos = email.indexOf("@");
     var dotpos = email.lastIndexOf(".");
     if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
