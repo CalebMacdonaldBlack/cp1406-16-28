@@ -458,7 +458,7 @@ footer {
 .footer-column {
     display: inline-block;
     width: 32%;
-    min-width: 500px;
+    min-width: 200px;
 }
 
 .footer-column ul {
