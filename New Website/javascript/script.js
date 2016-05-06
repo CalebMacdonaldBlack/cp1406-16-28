@@ -18,7 +18,9 @@ function validateContactUs() {
     } else {
         errorLabel.innerHTML = '';
     }
-    alert('Sent!')
+    alert('Sent!');
+
+
 }
 
 function validateContribute() {
@@ -34,6 +36,7 @@ function validateContribute() {
     var errorLabel = document.getElementById('errorLabel');
 
     if (!contribution.value && contribution.value < 200) {
+        contribution.value = '';
         errorLabel.innerHTML = 'You must enter an amount of atleast $200 or more.';
         return false;
     } else if (!payment) {
@@ -43,15 +46,38 @@ function validateContribute() {
         errorLabel.innerHTML = 'Please enter a benifactor name or ask to be displayed as anonymous.';
         return false;
     } else if (!mailingAddress.value) {
+        mailingAddress.value = ''
         errorLabel.innerHTML = 'Please enter a mailing address.';
         return false;
     } else if (!isValidEmail(emailAddress.value)) {
+        emailAddress.value = '';
         errorLabel.innerHTML = 'Please enter a valid email address';
         return false;
     } else {
         errorLabel.innerHTML = '';
     }
-    alert('Sent!')
+
+    if (payment !== 'eftpos') {
+        w = window.open();
+        w.document.write('North Queensland Ensembles Inc<br>');
+        w.document.write('PO Box 576 <br>');
+        w.document.write('Townsville<br>');
+        w.document.write('Queensland, 4810<br><br>');
+        w.document.write('Hi, I wish to make a contribution to the Barrier Reef Orchestra.<br><br>');
+        w.document.write('Amount: $' + contribution.value + '<br>');
+        w.document.write('Payment Method: ' + payment + '<br>');
+        if (benifactorName.value)
+            w.document.write('Benifactor name: ' + benifactorName.value + '<br>');
+        else
+            w.document.write('Benifactor name: anonymous<br>');
+        w.document.write('Mailing address: ' + mailingAddress.value + '<br>');
+        w.document.write('Email address: ' + emailAddress.value + '<br>');
+        w.document.write('Phone: ' + phone.value + '<br>');
+        w.document.write('Mobile: ' + mobile.value + '<br>');
+        w.print();
+        w.close();
+        return false;
+    }
 }
 
 function paymentClicked() {
