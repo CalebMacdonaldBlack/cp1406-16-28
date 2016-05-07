@@ -40,8 +40,10 @@
     width: 80%;
     position: relative;
     margin: 0 auto;
-    background-color: black;
+    background-color: rgba(0, 77, 77, 0.2);
     overflow: auto;
+    padding: 1em 0;
+
 }
 #left img {
     width: 100%;
@@ -53,11 +55,11 @@
     cursor: pointer;
 }
 #left {
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: absolute;
-    left: 8%;
-    top: 10em;
+    left: 35%;
+    bottom: .5em;
 }
 #right img {
     width: 100%;
@@ -70,11 +72,11 @@
     cursor: pointer;
 }
 #right {
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: absolute;
-    right: 8%;
-    top: 10em;
+    right: 35%;
+    bottom: .5em;
 }
 
 #slide {
@@ -102,32 +104,41 @@
 #gallery_slide {
     background-color: black;
     width: 80%;
-    height: 30em;
+    height: 32em;
     overflow: auto;
     margin: 0 auto;
     position: relative;
     margin: 0 auto;
+    display: block;
+    padding: 0;
+    /*
+    top: 10em;
+    right: 40%;
+        */
+    margin-bottom: 1em;
+
 }
 
 #slideimage   {
-    width: 60%;
+    width: 85%;
     margin: 0 auto;
     position: relative;
-    border: white solid;
-    height: 20em;
-    top: 2em;
+
+    height: 100%;
+
 }
 #slideimage .slidephoto {
     display: block;
-    margin: 0 auto;
+    margin-top: 0;
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
 #slidelabel {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
+    display: none;
     top: 2em;
    }
 #slidelabel h3 {
@@ -143,9 +154,9 @@
     float: left;
     margin: .5em;
     position: relative;
-    border: white solid 1px;
+    border: black solid 1px;
     border-radius: 10px;
-    opacity: .5;
+    opacity: .8;
 }
 #gallery_thumbnails_slavonicswoon img:hover {
     opacity: 1;
@@ -157,9 +168,11 @@
     margin: 0 auto;
     position: relative;
     overflow: auto;
-    width: 98%;
-    padding: 10px;
+    width: 80%;
+    padding:0;
     display: block;
+    background-color: #006666;
+    -webkit-border-top-right-radius: 15px;
 }
 /*hotsummernight*/
 #gallery_thumbnails_hotsummer img {
@@ -169,9 +182,9 @@
     float: left;
     margin: .5em;
     position: relative;
-    border: white solid 1px;
+    border: black solid 1px;
     border-radius: 10px;
-    opacity: .5;
+    opacity: .8;
 }
 #gallery_thumbnails_hotsummer img:hover {
     opacity: 1;
@@ -183,9 +196,11 @@
     margin: 0 auto;
     position: relative;
     overflow: auto;
-    width: 98%;
-    padding: 10px;
+    width: 80%;
+    padding: 0px;
     display: none;
+    background-color: #006666;
+    -webkit-border-top-right-radius: 15px;
 }
 /*last_night_of_proms*/
 #gallery_thumbnails_lastnight img {
@@ -195,9 +210,9 @@
     float: left;
     margin: .5em;
     position: relative;
-    border: white solid 1px;
+    border: black solid 1px;
     border-radius: 10px;
-    opacity: .5;
+    opacity: .8;
 }
 #gallery_thumbnails_lastnight img:hover {
     opacity: 1;
@@ -209,20 +224,56 @@
     margin: 0 auto;
     position: relative;
     overflow: auto;
-    width: 98%;
-    padding: 10px;
+    width: 80%;
+    padding: 0px;
     display: none;
+    background-color: #006666;
+    -webkit-border-top-right-radius: 15px;
+}
+
+#tab_header {
+    width: 80%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    /*border: black solid 2px;*/
+    /*overflow: auto;*/
+    /*height: auto;*/
+    padding: 0;
+}
+
+#tab_header ul li {
+    color: white;
+    display: block;
+    padding: 1em;
+    border-right: white solid 1px;
+    padding: 0;
+    margin: 0;
+    /*height: auto;*/
+    padding: .5em;
+    list-style: none;
+    float: left;
+    background-color: #006666;
+    -webkit-border-top-right-radius: 15px;
+    /*float: left; */
+
+}
+#tab_header ul li:hover {
+    cursor: pointer;
+}
+#tab_header ul {
+
+    height: 2em;
+    position: relative;
+    /*overflow: auto;*/
+    padding: 0;
+    margin: 0;
 }
 
 
-
-
-
-
-
-
-
-
+footer {
+    margin-top: 0;
+}
 
 
 

@@ -37,20 +37,30 @@
     </div>
     <div class="row">
         <div id="content">
-            <h1 class="page-heading">Gallery</h1>
+            <!--<h1 class="page-heading">Gallery</h1>-->
             <div id="gallery">
-
                 <div id="gallery_slide">
                     <div id="slideimage"> <img class="slidephoto" src="Images/slavonicswoon/img1.jpg" id="img"/></div>
                     <div id="left"><img onClick="rotate(-1)" class="button" src="images/people/play_arrow_right_button_next1.png"/></div>
                     <div id="right"><img onClick="rotate(1)" class="button" src="images/people/play_arrow_right_button_next.png"/></div>
                     <div id="slidelabel"><h3 id="label">SLAVONIC SWOON 2008</h3></div>
+
+                </div>
+                <div id="tab_header">
+                    <ul id="tab_header_title">
+                        <li class="p1" id="p1" onclick="group_select(1)">Slavonic Swoon 2008</li>
+                        <li class="p2" id="p2" onclick="group_select(2)">Hot Summer Night 2008</li>
+                        <li class="p3" id="p3" onclick="group_select(3)">Last Night of the Proms</li>
+                    </ul>
+                    <!--
                     <div id="gallery_groups">
                         <p class="p1" id="p1" onclick="group_select(1)">Slavonic Swoon 2008</p>
                         <p class="p2" id="p2" onclick="group_select(2)">Hot Summer Night 2008</p>
                         <p class="p3" id="p3" onclick="group_select(3)">Last Night of the Proms</p>
                     </div>
+                    -->
                 </div>
+
 
                 <div id="gallery_thumbnails_slavonicswoon">
                     <img src="images/slavonicswoon/img1.jpg" onclick="select(1,1)">
