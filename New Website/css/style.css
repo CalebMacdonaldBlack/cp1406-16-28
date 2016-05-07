@@ -338,6 +338,25 @@ a {
     font-size: 1em;
 }
 
+.full-width {
+    width: 95%;
+}
+
+.fb-share-right {
+    float: right;
+    margin: 2.2em 1.5em;
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform-origin: top left;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+}
+
 
 /* forms */
 
