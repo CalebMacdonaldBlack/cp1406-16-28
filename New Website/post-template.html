@@ -14,6 +14,18 @@
 </head>
 
 <body>
+    <!-- facebook share intergration-->
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=559211767572510";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="banner">
         <a href="https://www.facebook.com/nqorchestra/"><img src="./res/images/facebook-logo.png" class="facebook-logo"></a>
         <h1>Barrier Reef Orchestra</h1>
@@ -52,6 +64,7 @@
             <div class="content-panel">
                 <div class="content-text full-width">
                     <!-- Post name -->
+                    <div class="fb-share-button fb-share-right" data-href="http://ditwebtsv.jcu.edu.au/~bro28/m2/post-template.html" data-layout="button" data-mobile-iframe="true">hello?</div>
                     <h1>President’s Report</h1>
                     <em>for 2015 AGM North Queensland Ensembles Inc.</em>
                     <div class="line"></div>
