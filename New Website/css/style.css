@@ -7,6 +7,12 @@ body {
 
 /* Navigation bar */
 
+.facebook-logo {
+    width: 7%;
+    min-width: 70px;
+    float: right;
+}
+
 .navigation {
     max-width: 1599px;
     margin: 0 auto;
@@ -24,12 +30,12 @@ body {
 
 .banner > h1 {
     color: #e6b800;
+    text-align: center;
     text-shadow: 2px 2px grey;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 60px;
     margin: 0;
-    padding-top: 1em;
-    padding-left: 3em;
+    padding-top: 7%;
 }
 
 .navigation > a > .nav-btn {
@@ -78,19 +84,19 @@ a {
 }
 
 .left-column {
-    width: 5%;
+    width: 10%;
     height: 1px;
     float: left;
 }
 
 .right-column {
-    width: 5%;
+    width: 10%;
     height: 1px;
     float: left;
 }
 
 .center-column {
-    width: 90%;
+    width: 80%;
     float: left;
 }
 
