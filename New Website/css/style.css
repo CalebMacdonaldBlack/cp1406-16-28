@@ -120,6 +120,35 @@ a {
     border-radius: .7em;
 }
 
+.supporters-call-to-action {
+    background-image: url("../res/images/jenniferleahorch.jpg");
+    background-size: cover;
+    background-position: 30% 0%;
+    text-align: center;
+    height: 20%;
+    padding: 2.5em;
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    border-radius: .7em;
+}
+
+.btn-supporters {
+    background-color: #99ff33;
+    border-top: 0.05em solid #66cc00;
+    border-left: 0.05em solid #66cc00;
+    border-right: 0.1em solid #66cc00;
+    border-bottom: 0.1em solid #66cc00;
+    margin: 2% auto;
+    width: 30%;
+    font-size: .7em;
+}
+
+.btn-supporters > a {
+    text-decoration: none;
+    color: black;
+}
+
 .img-display h1 {
     color: white;
     text-shadow: 2px 2px black;
@@ -228,7 +257,8 @@ a {
     text-shadow: 2px 2px black;
     text-align: center;
     margin: 0;
-    margin: .5em 0;
+    margin-bottom: .5em;
+    margin-top: .5em;
     color: #e6b800;
 }
 
@@ -390,6 +420,12 @@ form {
     margin-bottom: 2em;
 }
 
+.supporters-list {
+    list-style-type: none;
+    font-size: 1.3em;
+    padding-right: 2em;
+}
+
 
 /*FOR GALLERY*/
 
@@ -460,6 +496,9 @@ footer {
     width: 92%;
 }
 
+
+/* Sponsors*/
+
 .sponsor > a > img {
     max-width: 100%;
 }
@@ -468,13 +507,17 @@ footer {
     text-align: center;
     align-self: center;
     width: 13%;
-    margin: 0 .5%;
+    min-width: 10em;
+    margin: auto .5%;
+    margin-bottom: 1em;
     display: inline-block;
 }
 
 .sponsor-container {
     background-color: white;
-    display: flex;
+    /*display: flex;*/
+    display: inline-block;
+    text-align: center;
     border-radius: .3em;
     padding: .3em 0;
     margin-bottom: 1em;
