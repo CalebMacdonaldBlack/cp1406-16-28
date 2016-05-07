@@ -359,6 +359,7 @@ a {
     display: block;
     margin-top: 1em;
     width: 20%;
+    min-width: 9em;
     background-color: #006666;
     color: white;
     border-top: 0.1em solid black;
@@ -411,6 +412,7 @@ form {
 
 .input-container {
     width: 70%;
+    margin: 0 auto;
 }
 
 .error {
@@ -424,6 +426,14 @@ form {
     list-style-type: none;
     font-size: 1.3em;
     padding-right: 2em;
+}
+
+.radio-container input {
+    width: 1em;
+}
+
+#benifactorSection {
+    display: none;
 }
 
 
