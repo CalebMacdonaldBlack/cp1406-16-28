@@ -338,6 +338,10 @@ a {
     font-size: 1em;
 }
 
+.full-width {
+    width: 95%;
+}
+
 
 /* forms */
 
