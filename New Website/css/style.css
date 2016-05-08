@@ -284,6 +284,7 @@ a {
     overflow: auto;
     color: black;
     margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 .flex-panel {
@@ -304,9 +305,12 @@ a {
 
 .centered-image > img {
     display: block;
-    margin: auto
+    margin: auto;
 }
 
+.small-image {
+    width:40%;
+}
 .img-left {
     float: left;
     margin-right: 1em;
