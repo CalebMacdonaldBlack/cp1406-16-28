@@ -171,8 +171,9 @@
     width: 80%;
     padding:0;
     display: block;
-    background-color: #006666;
+    background-color: black;
     -webkit-border-top-right-radius: 15px;
+    padding-top: 1em;
 }
 /*hotsummernight*/
 #gallery_thumbnails_hotsummer img {
@@ -199,8 +200,9 @@
     width: 80%;
     padding: 0px;
     display: none;
-    background-color: #006666;
+    background-color: black;
     -webkit-border-top-right-radius: 15px;
+    padding-top: 1em;
 }
 /*last_night_of_proms*/
 #gallery_thumbnails_lastnight img {
@@ -227,8 +229,9 @@
     width: 80%;
     padding: 0px;
     display: none;
-    background-color: #006666;
+    background-color: black;
     -webkit-border-top-right-radius: 15px;
+    padding-top: 1em;
 }
 
 #tab_header {
@@ -253,7 +256,7 @@
     padding: .5em;
     list-style: none;
     float: left;
-    background-color: #006666;
+    background-color: black;
     -webkit-border-top-right-radius: 15px;
     /*float: left; */
 
