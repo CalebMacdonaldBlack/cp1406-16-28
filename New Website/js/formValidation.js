@@ -35,9 +35,9 @@ function validateContribute() {
 
     var errorLabel = document.getElementById('errorLabel');
 
-    if (!contribution.value) {
+    if (contribution.value === '' || contribution.value < 0) {
         contribution.value = '';
-        errorLabel.innerHTML = 'You must enter an contribution amount.';
+        errorLabel.innerHTML = 'You must enter a valid contribution amount.';
         return false;
     } else if (!payment) {
         errorLabel.innerHTML = 'Please select a payment option.';
