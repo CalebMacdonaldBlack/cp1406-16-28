@@ -1,4 +1,4 @@
-using images as buttons:
+using images as buttons: not modified copy right notifications apply, if used please reconstruct
 
 <div class="w3-content" style="max-width:1200px">
   <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
