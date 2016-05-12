@@ -309,8 +309,9 @@ a {
 }
 
 .small-image {
-    width:40%;
+    width: 40%;
 }
+
 .img-left {
     float: left;
     margin-right: 1em;
@@ -369,6 +370,11 @@ a {
     border-left: 0.1em solid black;
     border-right: 0.15em solid black;
     border-bottom: 0.15em solid black;
+}
+
+.btn-read-more > a {
+    color: white;
+    text-decoration: none;
 }
 
 .btn-submit {
