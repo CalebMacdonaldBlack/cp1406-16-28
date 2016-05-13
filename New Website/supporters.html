@@ -6,6 +6,7 @@
     <title>Barrier Reef Orchestra</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" media="screen">
+    <script type="text/javascript" src="./js/dropdown.js"></script>
 </head>
 
 <body>
@@ -26,8 +27,15 @@
         <a href="./supporters.html">
             <div class="nav-btn nav-btn-active">Supporters</div>
         </a>
-        <a href="./people.html">
-            <div class="nav-btn">Our People</div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn nav-btn">Our People</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="./people-special-guests.html">Special Guests</a>
+                <a href="./people-members.html">Members</a>
+            </div>
+        </div>
+        <a href="">
+            <div class="nav-btn"></div>
         </a>
         <a href="./about.html">
             <div class="nav-btn">About Us</div>
