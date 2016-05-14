@@ -171,7 +171,7 @@ a {
     border-left: 0.05em solid #66cc00;
     border-right: 0.1em solid #66cc00;
     border-bottom: 0.1em solid #66cc00;
-    width: 60%;
+    width: 6em;
     min-width: 230px;
     margin: 2% auto;
 }
@@ -192,7 +192,7 @@ a {
 .btn-container {
     background-color: rgba(0, 0, 0, 0.6);
     margin: 0 auto;
-    width: 65%;
+    width: 13em;
     padding: 1em;
     border-radius: .35em;
     font-size: .75em;
