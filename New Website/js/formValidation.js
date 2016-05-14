@@ -18,9 +18,7 @@ function validateContactUs() {
     } else {
         errorLabel.innerHTML = '';
     }
-    alert('Sent!');
-
-
+    alert('Message Sent!')
 }
 
 function validateContribute() {
