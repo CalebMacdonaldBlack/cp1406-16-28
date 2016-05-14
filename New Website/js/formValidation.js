@@ -40,7 +40,7 @@ function validateContribute() {
     } else if (!payment) {
         errorLabel.innerHTML = 'Please select a payment option.';
         return false;
-    } else if (!benifactorName.value && (!isAnonymous || isAnonymous != "true")) {
+    } else if (contribution.value >= 200 && !benifactorName.value && (!isAnonymous || isAnonymous != "true")) {
         errorLabel.innerHTML = 'Please enter a benifactor name or ask to be displayed as anonymous.';
         return false;
     } else if (!mailingAddress.value) {
@@ -74,7 +74,11 @@ function validateContribute() {
         w.document.write('Mobile: ' + mobile.value + '<br>');
         w.print();
         w.close();
-        return false;
+        alert('Thank you for your contribution. Please print out the document and mail your cheque/cash to the address on the letter.');
+        return true;
+    }else{
+        alert('Email Sent! Thank you for your contribution. Please send donation to BSB: 034 222 Acount No: 173922.');
+        return true;
     }
 }
 

@@ -145,11 +145,11 @@ a {
     border-right: 0.1em solid #66cc00;
     border-bottom: 0.1em solid #66cc00;
     margin: 2% auto;
-    width: 30%;
+    width: 13em;
     font-size: .7em;
 }
 
-.btn-supporters > a {
+.btn-supporters {
     text-decoration: none;
     color: black;
 }
