@@ -1,4 +1,4 @@
-#gallery_groups p {
+/*#gallery_groups p {
     color: black;
     border: gray solid 1px;
     background-color: white;
@@ -17,6 +17,7 @@
     color: white;
     border: white solid 1px;
 }
+*/
 .p1 {
     left: 3em;
     opacity: 1;
@@ -27,7 +28,7 @@
 .p2 {left: 40%;
     opacity: .5;
 }
-#gallery_groups {
+/*#gallery_groups {
     margin: 0 auto;
     position: relative;
     top: 2em;
@@ -35,14 +36,17 @@
     width: 100%;
     height: 2em;
     overflow: auto;
+}*/
+#content {
+    overflow: auto;
 }
 #gallery {
     width: 80%;
     position: relative;
     margin: 0 auto;
     background-color: rgba(0, 77, 77, 0.2);
-    overflow: auto;
     padding: 1em 0;
+    overflow: auto;
 
 }
 #left img {
@@ -55,11 +59,30 @@
     cursor: pointer;
 }
 #left {
-    width: 3em;
-    height: 3em;
+    width: 9%;
+    height: 60%;
     position: absolute;
-    left: 35%;
-    bottom: .5em;
+    left: 0;
+    top: 10em;
+    border: white solid 1px;
+    background-color: white;
+    opacity: 0;
+}
+
+#left:hover{
+    cursor: pointer;
+    opacity: .2;
+}
+
+#right:hover {
+    cursor: pointer;
+    opacity: .2;
+}
+#right:active {
+    opacity: .9;
+}
+#left:active {
+    opacity: .9;
 }
 #right img {
     width: 100%;
@@ -72,11 +95,14 @@
     cursor: pointer;
 }
 #right {
-    width: 3em;
-    height: 3em;
+    width: 9%;
+    height: 60%;
     position: absolute;
-    right: 35%;
-    bottom: .5em;
+    right: 0;
+    top: 10em;
+    border: white solid 1px;
+    background-color: white;
+    opacity: 0;
 }
 
 #slide {
@@ -103,14 +129,18 @@
 
 #gallery_slide {
     background-color: black;
-    width: 80%;
-    height: 32em;
-    overflow: auto;
-    margin: 0 auto;
-    position: relative;
-    margin: 0 auto;
-    display: block;
+    width: 60%;
+    height: 55%;
+    overflow: hidden;
+    position: fixed;
+    display: none;
     padding: 0;
+    top: 10em;
+    left: 20%;
+    border-radius: 1em;
+    border: white ridge 10px;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    max-height: 40em;
     /*
     top: 10em;
     right: 40%;
@@ -120,19 +150,24 @@
 }
 
 #slideimage   {
-    width: 85%;
-    margin: 0 auto;
+    width: 80%;
+    display: block;
     position: relative;
-
-    height: 100%;
+    height: auto;
+    margin: 0 auto;
 
 }
-#slideimage .slidephoto {
+#slideimage img {
+    width: 100%;
+    height: auto;
     display: block;
-    margin-top: 0;
+    margin: 0 auto;
     position: absolute;
+    align: middle;
+    /*
     width: 100%;
     height: 100%;
+    */
 }
 
 #slidelabel {
@@ -148,11 +183,11 @@
 
 /*slavonicswoon*/
 #gallery_thumbnails_slavonicswoon img {
-    width: 8em;
-    height: 5em;
+    width: 15em;
+    height: 10em;
     display: block;
     float: left;
-    margin: .5em;
+    margin: 1em;
     position: relative;
     border: black solid 1px;
     border-radius: 10px;
@@ -177,11 +212,11 @@
 }
 /*hotsummernight*/
 #gallery_thumbnails_hotsummer img {
-    width: 8em;
-    height: 5em;
+    width: 15em;
+    height: 10em;
     display: block;
     float: left;
-    margin: .5em;
+    margin: 1em;
     position: relative;
     border: black solid 1px;
     border-radius: 10px;
@@ -206,11 +241,11 @@
 }
 /*last_night_of_proms*/
 #gallery_thumbnails_lastnight img {
-    width: 8em;
-    height: 5em;
+    width: 15em;
+    height: 10em;
     display: block;
     float: left;
-    margin: .5em;
+    margin: 1em;
     position: relative;
     border: black solid 1px;
     border-radius: 10px;
@@ -232,7 +267,9 @@
     background-color: black;
     -webkit-border-top-right-radius: 15px;
     padding-top: 1em;
+
 }
+
 
 #tab_header {
     width: 80%;
@@ -278,8 +315,13 @@ footer {
     margin-top: 0;
 }
 
-
-
+#close {
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em; border-radius: 5px; background-color:red; color: white;
+    opacity: .3;
+}
+#close:hover {opacity: 1; }
 
 
 
