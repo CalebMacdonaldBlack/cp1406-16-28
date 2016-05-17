@@ -8,13 +8,11 @@ p {
 }
 #special_guests {
     width: 80%;
-    height: 45em;
-    overflow: scroll;
+    /*height: 45em;*/
+    overflow: auto;
     background: white;
     margin: 0 auto;
     padding-top: 2em;
-
-
 
 }
 #tab_header {
@@ -49,14 +47,14 @@ p {
     padding: 0;
 }
 #gap {
-    width: 100%;
+    width: 80%;
     height: 2em;
     border-top-right-radius: 80%;
     background: white;
-    margin-top: 2em;
     display:block;
     clear:both;
     margin: 0 auto;
+    margin-top: 2em;
 
 }
 .guest_thumb {
@@ -89,12 +87,9 @@ p {
 #about {
     width: 65%;
     margin-right: 10%;
-
     display: block;
     left: 20%;
     float: right;
-}
-#about {
     text-align: justify;
     font-size: .9em;
     font-family: Candara;
@@ -139,25 +134,27 @@ p {
 }
 #life_members {
     width: 80%;
-    height: 45em;
-    overflow: scroll;
+    /*height: 45em;*/
+    overflow: auto;
     background-color: white;
     margin: 0 auto;
     padding-top: 2em;
-    display: none;
+    display: block;
 }
 #member_thumb {
-    width: 32%;
+    width: 90%;
     dispaly: block;
-    float: left;
-    height: 51em;
+    /*float: left;
+    height: 51em;*/
     padding: 1em 0;
-    margin-left: .5em;
+    margin: 0 auto;
+    border-bottom: black solid 1px;
+    overflow: auto;
 
 
 }
-#member_thumb h3 {
-    text-align: center;
+#member_thumb h3 h4 {
+    text-align: left;
 }
 #member_thumb img {
     width: 80%;
@@ -169,15 +166,31 @@ p {
 
 }
 #about_member {
+    /*
     width: 80%;
     font-family: Candara;
     font-size: .9em;
     margin: 0 auto;
+    */
+    width: 65%;
+    margin-right: 10%;
+    display: block;
+    left: 20%;
+    float: right;
+    text-align: justify;
+    font-size: .9em;
+    font-family: Candara;
+}
+#about_member h3 h4 {
+    text-align: left;
 }
 #member_thumb:hover {
     background: gray;
     color: white;
 }
-h4 {
-    text-align: center;
+#member_photo {
+    width: 20%;
+    display: block;
+    float: left;
+    margin: .5em;
 }
