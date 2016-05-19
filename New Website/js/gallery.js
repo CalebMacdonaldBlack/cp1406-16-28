@@ -61,6 +61,7 @@ function select(y,z) {
     var b = 'images/hotsummernight2008/img';
     var c = 'images/lastnightofproms/img';
     var Image = document.getElementById('img');
+    document.getElementById('gallery_slide').style.display=('block');
 
     if (y==1) {
         Image.src=a+z+'.jpg';
@@ -70,6 +71,9 @@ function select(y,z) {
         Image.src=c+z+'.jpg';
     }
 }
+
+
+
 
 "Images/slavonicswoon/img"
 gallery_thumbnails

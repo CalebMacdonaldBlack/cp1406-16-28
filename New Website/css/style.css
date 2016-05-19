@@ -314,7 +314,8 @@ a {
 .centered-image > img {
     display: block;
     margin: auto;
-    width: 100%;
+    <<<<<<< HEAD width: 100%;
+    =======>>>>>>> our-people-development
 }
 
 .small-image {

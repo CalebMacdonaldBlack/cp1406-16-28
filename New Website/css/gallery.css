@@ -1,4 +1,4 @@
-#gallery_groups p {
+/*#gallery_groups p {
     color: black;
     border: gray solid 1px;
     background-color: white;
@@ -17,6 +17,7 @@
     color: white;
     border: white solid 1px;
 }
+*/
 .p1 {
     left: 3em;
     opacity: 1;
@@ -27,7 +28,7 @@
 .p2 {left: 40%;
     opacity: .5;
 }
-#gallery_groups {
+/*#gallery_groups {
     margin: 0 auto;
     position: relative;
     top: 2em;
@@ -35,13 +36,18 @@
     width: 100%;
     height: 2em;
     overflow: auto;
+}*/
+#content {
+    overflow: auto;
 }
 #gallery {
     width: 80%;
     position: relative;
     margin: 0 auto;
-    background-color: black;
+    background-color: rgba(0, 77, 77, 0.2);
+    padding: 1em 0;
     overflow: auto;
+
 }
 #left img {
     width: 100%;
@@ -53,11 +59,30 @@
     cursor: pointer;
 }
 #left {
-    width: 4em;
-    height: 4em;
+    width: 9%;
+    height: 60%;
     position: absolute;
-    left: 8%;
+    left: 0;
     top: 10em;
+    border: white solid 1px;
+    background-color: white;
+    opacity: 0;
+}
+
+#left:hover{
+    cursor: pointer;
+    opacity: .2;
+}
+
+#right:hover {
+    cursor: pointer;
+    opacity: .2;
+}
+#right:active {
+    opacity: .9;
+}
+#left:active {
+    opacity: .9;
 }
 #right img {
     width: 100%;
@@ -70,11 +95,14 @@
     cursor: pointer;
 }
 #right {
-    width: 4em;
-    height: 4em;
+    width: 9%;
+    height: 60%;
     position: absolute;
-    right: 8%;
+    right: 0;
     top: 10em;
+    border: white solid 1px;
+    background-color: white;
+    opacity: 0;
 }
 
 #slide {
@@ -101,33 +129,51 @@
 
 #gallery_slide {
     background-color: black;
-    width: 80%;
-    height: 30em;
-    overflow: auto;
-    margin: 0 auto;
-    position: relative;
-    margin: 0 auto;
+    width: 60%;
+    height: 55%;
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    padding: 0;
+    top: 10em;
+    left: 20%;
+    border-radius: 1em;
+    border: white ridge 10px;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    max-height: 40em;
+    /*
+    top: 10em;
+    right: 40%;
+        */
+    margin-bottom: 1em;
+
 }
 
 #slideimage   {
-    width: 60%;
-    margin: 0 auto;
+    width: 80%;
+    display: block;
     position: relative;
-    border: white solid;
-    height: 20em;
-    top: 2em;
+    height: auto;
+    margin: 0 auto;
+
 }
-#slideimage .slidephoto {
+#slideimage img {
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     position: absolute;
+    align: middle;
+    /*
     width: 100%;
     height: 100%;
+    */
 }
 
 #slidelabel {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
+    display: none;
     top: 2em;
    }
 #slidelabel h3 {
@@ -137,15 +183,15 @@
 
 /*slavonicswoon*/
 #gallery_thumbnails_slavonicswoon img {
-    width: 8em;
-    height: 5em;
+    width: 15em;
+    height: 10em;
     display: block;
     float: left;
-    margin: .5em;
+    margin: 1em;
     position: relative;
-    border: white solid 1px;
+    border: black solid 1px;
     border-radius: 10px;
-    opacity: .5;
+    opacity: .8;
 }
 #gallery_thumbnails_slavonicswoon img:hover {
     opacity: 1;
@@ -157,21 +203,24 @@
     margin: 0 auto;
     position: relative;
     overflow: auto;
-    width: 98%;
-    padding: 10px;
+    width: 80%;
+    padding:0;
     display: block;
+    background-color: black;
+    -webkit-border-top-right-radius: 15px;
+    padding-top: 1em;
 }
 /*hotsummernight*/
 #gallery_thumbnails_hotsummer img {
-    width: 8em;
-    height: 5em;
+    width: 15em;
+    height: 10em;
     display: block;
     float: left;
-    margin: .5em;
+    margin: 1em;
     position: relative;
-    border: white solid 1px;
+    border: black solid 1px;
     border-radius: 10px;
-    opacity: .5;
+    opacity: .8;
 }
 #gallery_thumbnails_hotsummer img:hover {
     opacity: 1;
@@ -183,21 +232,24 @@
     margin: 0 auto;
     position: relative;
     overflow: auto;
-    width: 98%;
-    padding: 10px;
+    width: 80%;
+    padding: 0px;
     display: none;
+    background-color: black;
+    -webkit-border-top-right-radius: 15px;
+    padding-top: 1em;
 }
 /*last_night_of_proms*/
 #gallery_thumbnails_lastnight img {
-    width: 8em;
-    height: 5em;
+    width: 15em;
+    height: 10em;
     display: block;
     float: left;
-    margin: .5em;
+    margin: 1em;
     position: relative;
-    border: white solid 1px;
+    border: black solid 1px;
     border-radius: 10px;
-    opacity: .5;
+    opacity: .8;
 }
 #gallery_thumbnails_lastnight img:hover {
     opacity: 1;
@@ -209,23 +261,67 @@
     margin: 0 auto;
     position: relative;
     overflow: auto;
-    width: 98%;
-    padding: 10px;
+    width: 80%;
+    padding: 0px;
     display: none;
+    background-color: black;
+    -webkit-border-top-right-radius: 15px;
+    padding-top: 1em;
+
 }
 
 
+#tab_header {
+    width: 80%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    /*border: black solid 2px;*/
+    /*overflow: auto;*/
+    /*height: auto;*/
+    padding: 0;
+}
+
+#tab_header ul li {
+    color: white;
+    display: block;
+    padding: 1em;
+    border-right: white solid 1px;
+    padding: 0;
+    margin: 0;
+    /*height: auto;*/
+    padding: .5em;
+    list-style: none;
+    float: left;
+    background-color: black;
+    -webkit-border-top-right-radius: 15px;
+    /*float: left; */
+
+}
+#tab_header ul li:hover {
+    cursor: pointer;
+}
+#tab_header ul {
+
+    height: 2em;
+    position: relative;
+    /*overflow: auto;*/
+    padding: 0;
+    margin: 0;
+}
 
 
+footer {
+    margin-top: 0;
+}
 
-
-
-
-
-
-
-
-
+#close {
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em; border-radius: 5px; background-color:red; color: white;
+    opacity: .3;
+}
+#close:hover {opacity: 1; }
 
 
 
