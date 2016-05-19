@@ -22,7 +22,7 @@ body {
 }
 
 .banner {
-    background-image: url("../res/images/bor-banner.jpg");
+    background-image: url("../res/images/bro-banner.jpg");
     background-size: cover;
     background-position: 30% 80%;
     max-width: 1598px;
@@ -314,6 +314,7 @@ a {
 .centered-image > img {
     display: block;
     margin: auto;
+    width: 100%;
 }
 
 .small-image {
@@ -568,6 +569,7 @@ footer {
     display: inline-block;
     width: 32%;
     min-width: 200px;
+    text-align: center;
 }
 
 .footer-column ul {
