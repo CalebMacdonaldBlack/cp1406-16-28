@@ -181,8 +181,8 @@ a {
     border-left: 0.05em solid #66cc00;
     border-right: 0.1em solid #66cc00;
     border-bottom: 0.1em solid #66cc00;
-    width: 10em;
-    min-width: 230px;
+    width: 8em;
+    min-width: 200px;
     /*margin: 2% auto;*/
 }
 
@@ -192,8 +192,8 @@ a {
     border-left: 0.05em solid #e68a00;
     border-right: 0.1em solid #e68a00;
     border-bottom: 0.1em solid #e68a00;
-    width: 10em;
-    min-width: 230px;
+    width: 8em;
+    min-width: 200px;
     margin: .5% auto;
     display: inline-block;
     margin-bottom: .7em;
@@ -204,16 +204,16 @@ a {
 
 .btn-container {
     /*background-color: rgba(0, 0, 0, 0.6);*/
-    margin: 0 auto;
+    margin-left: 0;
     width: 15em;
-    padding: 1em;
+    padding: 0;
     border-radius: .35em;
     font-size: 1em;
     font-weight: bold;
     color: white;
-    position: absolute;
+    position: relative;
     top: 4em;
-    left: 2em;
+    left: 1.5em;
     opacity: .5;
     animation: 4s light infinite;
 }
@@ -227,7 +227,7 @@ a {
 }
 .btn-container h1 {
     color: white;
-    text-align: center;
+    text-align: left;
     margin-bottom: 0;
 }
 #img-display {
@@ -776,9 +776,10 @@ footer {
 
 #upcoming {
     position: absolute;
-    top: 6em;
-    right: 2em;
+    right: 1em;
+    top: 2em; 
     color: white;
+
 }
 #upcoming .event {
     text-align: center;
