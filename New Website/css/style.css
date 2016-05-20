@@ -19,12 +19,15 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .banner {
-    background-image: url("../res/images/bro-banner.jpg");
-    background-size: cover;
-    background-position: 30% 80%;
+    background-image: url("../images/banner.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     max-width: 1598px;
     width: 100%;
     height: 15em;
@@ -169,18 +172,22 @@ a {
 }
 
 .btn-green {
-    background-color: #99ff33;
+    background-color: orange;
+    color: white;
+    font-size: 1em;
+    padding: .5em;
+    margin-bottom: 1em;
     border-top: 0.05em solid #66cc00;
     border-left: 0.05em solid #66cc00;
     border-right: 0.1em solid #66cc00;
     border-bottom: 0.1em solid #66cc00;
     width: 10em;
     min-width: 230px;
-    margin: 2% auto;
+    /*margin: 2% auto;*/
 }
 
 .btn-orange {
-    background-color: #ffa31a;
+    background-color: red;
     border-top: 0.05em solid #e68a00;
     border-left: 0.05em solid #e68a00;
     border-right: 0.1em solid #e68a00;
@@ -190,21 +197,76 @@ a {
     margin: .5% auto;
     display: inline-block;
     margin-bottom: .7em;
+    color: white;
+    font-size: 1em;
+    padding: .5em;
 }
 
 .btn-container {
-    background-color: rgba(0, 0, 0, 0.6);
+    /*background-color: rgba(0, 0, 0, 0.6);*/
     margin: 0 auto;
-    width: 20em;
+    width: 15em;
     padding: 1em;
     border-radius: .35em;
-    font-size: .75em;
-    padding-bottom: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    opacity: .5;
+    animation: 4s light infinite;
+}
+@keyframes light {
+    from {opacity:0;}
+    to {opacity:100;}
+}
+.btn-container:hover {
+    opacity: 1;
+    animation-delay: 100s;
+}
+.btn-container h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+#img-display {
+    overflow: hidden;
+    height: 25em;
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 1em;
+    z-index: -1;
+}
+#img-display figure img {
+    width: 33.3%;
+    float: left;
+    display: block;
+    z-index: -1;
+
+}
+#img-display figure {
+    position: relative;
+    width: 300%;
+    left: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slidy infinite;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -100%; }
+    70% { left: -100%; }
+    75% { left: -200%; }
+    95% { left: -200%; }
+    100% { left: -200%; }
 }
 
-.img-display a {
-    color: black;
-}
 
 @media (max-width: 1000px) {
     .btn-container {
@@ -279,7 +341,8 @@ a {
 
 .row {
     overflow: auto;
-    height: 100%
+    height: 100%;
+    z-index: -1;
 }
 
 
@@ -681,3 +744,43 @@ footer {
     margin-left: 14%;
 }
 
+.donate_button {
+    width: 6em;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .5em;
+    text-align: center;
+    border-radius: 1em;
+    border: double;
+    border-top-style: outset;
+    display: block;
+    margin: 0 auto;
+}
+.donate_button:hover {
+    cursor: pointer;
+}
+#top_button {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 1;
+    margin: 0 auto;
+}
+#top_button p {
+    font-size: 1em;
+}
+
+#upcoming {
+    position: absolute;
+    top: 6em;
+    right: 2em;
+    color: white;
+}
+#upcoming .event {
+    text-align: center;
+    margin: 0
+}
