@@ -61,14 +61,8 @@ p {
     width: 90%;
     height: auto;
     margin: 0 auto;
-    position: relative;
     overflow: auto;
     border-bottom:gray solid 1px;
-}
-.guest_thumb:hover {
-    background: gray;
-    color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 #guest {
@@ -143,7 +137,6 @@ p {
 }
 #member_thumb {
     width: 90%;
-    dispaly: block;
     /*float: left;
     height: 51em;*/
     padding: 1em 0;
@@ -184,10 +177,7 @@ p {
 #about_member h3 h4 {
     text-align: left;
 }
-#member_thumb:hover {
-    background: gray;
-    color: white;
-}
+
 #member_photo {
     width: 20%;
     display: block;
