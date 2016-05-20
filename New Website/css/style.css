@@ -174,7 +174,7 @@ a {
     border-left: 0.05em solid #66cc00;
     border-right: 0.1em solid #66cc00;
     border-bottom: 0.1em solid #66cc00;
-    width: 6em;
+    width: 10em;
     min-width: 230px;
     margin: 2% auto;
 }
@@ -185,7 +185,7 @@ a {
     border-left: 0.05em solid #e68a00;
     border-right: 0.1em solid #e68a00;
     border-bottom: 0.1em solid #e68a00;
-    width: 60%;
+    width: 10em;
     min-width: 230px;
     margin: .5% auto;
     display: inline-block;
@@ -195,7 +195,7 @@ a {
 .btn-container {
     background-color: rgba(0, 0, 0, 0.6);
     margin: 0 auto;
-    width: 13em;
+    width: 20em;
     padding: 1em;
     border-radius: .35em;
     font-size: .75em;
