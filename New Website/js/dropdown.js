@@ -28,3 +28,9 @@ function play() {
 function notice() {
     window.alert('Sorry for the inconvenience, but tickets are not yet available as of the moment')
 }
+function close_popUp() {
+    document.getElementById('pop_up').style.display='none';
+}
+function show() {
+    document.getElementById('pop_up').style.display='block';
+}
