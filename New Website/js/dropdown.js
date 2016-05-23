@@ -18,3 +18,13 @@ window.onclick = function(event) {
         }
     }
 }
+
+function pause() {
+    document.getElementById('sliding_img').style.animationPlayState=('paused');
+}
+function play() {
+    document.getElementById('sliding_img').style.animationPlayState=('running');
+}
+function notice() {
+    window.alert('Sorry for the inconvenience, but tickets are not yet available as of the moment')
+}
