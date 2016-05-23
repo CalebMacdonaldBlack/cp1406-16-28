@@ -11,6 +11,10 @@ body {
     width: 7%;
     min-width: 70px;
     float: right;
+    position: relative;
+    margin-top: 1em; margin-right: 1em;
+    top: 0;
+    clear: both; 
 }
 
 .navigation {
@@ -777,7 +781,7 @@ footer {
 #upcoming {
     position: absolute;
     right: 1em;
-    top: 2em; 
+    top: 4em;
     color: white;
 
 }
