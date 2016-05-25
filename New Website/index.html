@@ -62,8 +62,8 @@
                     <div id="slide1">
                         <div class="slide-photo-container"><img onclick="show()" src="images/twilight2016.jpg" alt="Twilight 2016" class="slide_photo"></div>
                         <div id="info">
-                            <h1 class="gold-text">UPCOMING EVENT</h1>
-                            <ul>
+                            <h1 onclick="show()" class="gold-text">UPCOMING EVENT</h1>
+                            <ul onclick="show()">
                                 <li>TWILIGHT CLASSICS" <br>7:30 pm Saturday 17 July at Townsville CivicTheatre</li>
                                 <li>$38 Adult</li>
                                 <li>$34 Concession</li>
@@ -95,13 +95,18 @@
                     <br>NQE Member - $32</p>
                 <img class="concert_image" src="images/Twilight2016.jpg" alt="Twilight Classic Event">
                 <img class="conductor_image" src="images/people/MarioDobernig250.jpg" alt="Mario Dobernig">
+                <button class="close_pop" onclick="close_popUp()">close</button>
                 <div id="concert_details">
                     <p><strong>Conductor: Mario Dobernig</strong>
                         <br><br>Mario is the resident conductor of the Preston Symphony and the Musical Director of Victoria
                         Chorale</p>
                     <a href="people_specialguests.html#mario"><em>Read More about Mario</em></a>
-                    <button class="close_pop" onclick="close_popUp()">close</button>
+
                 </div>
+                <div id="buyBtn">
+                <h3 onclick="notice()" onmouseover="pause()" onmouseout="play()" class="call_btn">BUY TICKETS FOR THE EVENT</h3>
+                </div>
+
             </div>
         </div>
     </div>
