@@ -740,6 +740,13 @@ footer {
     animation: 2s fade infinite;
 }
 
+.supporters-call-to-action .call_btn {
+    font-size: .7em;
+    padding: .4em;
+    width: 25%;
+    margin: 0 auto
+}
+
 @keyframes fade {
     from {background-color: rgba(204, 122, 0, 0.3);}
     to {background-color: rgba(204, 122, 0, 1)}
