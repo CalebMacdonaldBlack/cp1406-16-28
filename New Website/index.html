@@ -56,15 +56,52 @@
         </a>
     </div>
     <div class="row">
-        <div class="all-column">
-            <div class="img-display">
-                <div class="btn-container">
-                    <h1>Get Involved</h1>
-                    <a href="./contact-us.html"><div class="btn-green btn">Join the orchestra</div></a>
-                    <a href="./contribute.html"><div class="btn-orange btn">Become a benifactor</div></a>
-                    <!--<div class="btn-orange btn"><a href="">Attend an event</a></div>-->
+        <div id="all-columnA">
+            <div id="slider">
+                <div id="sliding_img">
+                    <div id="slide1" >
+                        <div class="slide-photo-container"><img onclick="show()" src="images/twilight2016.jpg" alt="Twilight 2016" class="slide_photo"></div>
+                        <div id="info">
+                            <h1 class="gold-text">UPCOMING EVENT</h1>
+                            <ul> 
+                                <li>TWILIGHT CLASSICS" <br>7:30 pm Saturday 17 July at Townsville CivicTheatre</li>
+                                <li>$38 Adult</li>
+                                <li>$34 Concession</li>
+                                <li>Child/student $15</li>
+                                <li>NQE Member - $32</li>
+                                <li><h3 onclick="notice()" onmouseover="pause()" onmouseout="play()" class="call_btn">BUY TICKETS FOR THE EVENT</h3></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div id="slide2" >
+                        <div class="slide-photo-container slide-photo-two"><img src="images/hotsummernight2008/img32.jpg" alt="Orchestra members" class="slide_photo"></div>
+                        <div id="info">
+                        <h1 class="gold-text">HELP THE ORCHESTRA</h1>
+                        <a href="./contact-us.html"><h3 onmouseover="pause()" onmouseout="play()" class="call_btn">BECOME A MEMBER</h3></a>
+                        <a href="./contribute.html"><h3 onmouseover="pause()" onmouseout="play()" class="call_btn">DONATE</h3></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div id="pop_up">
+                <h3>UPCOMING EVENT</h3>
+                <h1>TWILIGHT CLASSICS</h1>
+                <p class="concertDetails">7:30 pm Saturday 17 July at Townsville CivicTheatre
+                <br> $38 Adult
+                <br>$34 Concession
+                <br>Child/student $15
+                <br>NQE Member - $32</p>
+                <img class="concert_image" src="images/Twilight2016.jpg" alt="Twilight Classic Event">
+                <img class="conductor_image" src="images/people/MarioDobernig250.jpg" alt="Mario Dobernig">
+                <div id="concert_details">
+                    <p><strong>Conductor: Mario Dobernig</strong>
+                        <br><br>Mario is the resident conductor of the Preston Symphony and the Musical Director of Victoria Chorale</p>
+                    <a href="people_specialguests.html#mario"><em>Read More about Mario</em></a>
+                    <button class="close_pop" onclick="close_popUp()">close</button>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="left-column">
         </div>
@@ -120,7 +157,7 @@
         <div class="right-column"></div>
         <div class="all-column">
             <footer>
-                <div class="footer-column">
+                <div class="footer-column" id="footer">
                     <ul>
                         <li>
                             <a href="./index.html">Homepage</a>
