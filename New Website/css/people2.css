@@ -8,7 +8,7 @@ h3, p {
 p {
     margin-bottom: 1em;
 }
-#special_guests {
+.special_guests {
     width: 80%;
     /*height: 45em;*/
     overflow: auto;
@@ -17,20 +17,20 @@ p {
     padding-top: 2em;
 
 }
-#tab_header {
+.tab_header {
     width: 80%;
     padding: 0;
     margin: 0 auto;
     margin-top: 1em;
 }
-#click_1 {
+.click_1 {
     background: white;
 }
-#click_2 {
+.click_2 {
     background:gray;
     opacity: .5;
 }
-#tab_header ul li {
+.tab_header ul li {
 
     border-top-right-radius: 10px;
     display: block;
@@ -40,15 +40,15 @@ p {
     border-right:black solid 1px;
     font-weight:bold;
 }
-#tab_header ul li:hover {
+.tab_header ul li:hover {
     cursor: pointer;
 }
-#tab_header ul {
+.tab_header ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#gap {
+.gap {
     width: 80%;
     height: 2em;
     border-top-right-radius: 80%;
@@ -67,20 +67,20 @@ p {
     border-bottom:gray solid 1px;
 }
 
-#guest {
+.guest {
     width: 20%;
     display: block;
     float: left;
     margin: .5em;
 
 }
-#guest img {
+.guest img {
     width: 100%;
     border-radius: 50%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-#about {
+.about {
     width: 65%;
     margin-right: 10%;
     display: block;
@@ -91,7 +91,7 @@ p {
     font-family: Candara;
 }
 
-#guestnodetails {
+.guestnodetails {
     width: 11em;
     display: block;
     float: left;
@@ -100,16 +100,16 @@ p {
     margin-top: 1em;
 
 }
-#guestnodetails img {
+.guestnodetails img {
     width: 10em;
     height: 10em;
 }
-#buttomguest {
+.buttomguest {
     width: 100%;
     border-top: black solid 3px;
 }
 
-#button_top {
+.button_top {
     opacity: .5;
     color: white;
     background: black;
@@ -123,12 +123,12 @@ p {
     width: 8em;
     text-align: center;
 }
-#button_top:hover {
+.button_top:hover {
     cursor: pointer;
     opacity: 1;
 
 }
-#life_members {
+.life_members {
     width: 80%;
     /*height: 45em;*/
     overflow: auto;
@@ -137,7 +137,7 @@ p {
     padding-top: 2em;
     display: block;
 }
-#member_thumb {
+.member_thumb {
     width: 90%;
     /*float: left;
     height: 51em;*/
@@ -148,10 +148,10 @@ p {
 
 
 }
-#member_thumb h3 h4 {
+.member_thumb h3 h4 {
     text-align: left;
 }
-#member_thumb img {
+.member_thumb img {
     width: 80%;
     border-radius: 50%;
     display: block;
@@ -160,7 +160,7 @@ p {
 
 
 }
-#about_member {
+.about_member {
     /*
     width: 80%;
     font-family: Candara;
@@ -176,11 +176,11 @@ p {
     font-size: .9em;
     font-family: Candara;
 }
-#about_member h3 h4 {
+.about_member h3 h4 {
     text-align: left;
 }
 
-#member_photo {
+.member_photo {
     width: 20%;
     display: block;
     float: left;
