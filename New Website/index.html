@@ -6,11 +6,21 @@
     <title>Barrier Reef Orchestra</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" media="screen">
+    <link href="images/backless.png" rel="shortcut icon">
     <script src="./js/dropdown.js"></script>
     <script src="./js/navbar.js"></script>
+    <title>Your Website Title</title>
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+	<meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Your Website Title" />
+	<meta property="og:description"   content="Your description" />
+	<meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
 </head>
 
 <body>
+
     <!-- Facebook Share Intergration -->
     <script>
         (function(d, s, id) {
@@ -22,9 +32,10 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="banner" id="banner">
+<div class="banner" id="banner">
         <h1>Barrier Reef Orchestra</h1>
-    </div>
+    <a href="index.html"><img src="file:///E|/Documents/GitHub/cp1406-16-28/Logo-Designs/backless.png" alt="" width="110" height="110" id="img-fix"/></a>
+  </div>
     <div class="navigation" id="navBar">
         <a href="./index.html">
             <div class="nav-btn nav-btn-active nav-left">Home</div>
@@ -55,13 +66,14 @@
             <div class="nav-btn nav-right">Contact Us</div>
         </a>
     </div>
+    <a href="https://www.facebook.com/nqorchestra/"><img id="allign" src="images/Facebook.png" width="500" height="25" alt=""/></a>
     <div class="row">
         <div id="all-columnA">
             <div id="slider">
                 <div id="sliding_img">
                     <div id="slide1">
                         <div class="slide-photo-container"><img onclick="show()" src="images/twilight2016.jpg" alt="Twilight 2016" class="slide_photo"></div>
-                        <div class="info">
+                        <div id="info">
                             <h1 onclick="show()" class="gold-text">UPCOMING EVENT</h1>
                             <ul onclick="show()">
                                 <li>TWILIGHT CLASSICS" <br>7:30 pm Saturday 17 July at Townsville CivicTheatre</li>
@@ -77,7 +89,7 @@
                     </div>
                     <div id="slide2">
                         <div class="slide-photo-container slide-photo-two"><img src="images/hotsummernight2008/img32.jpg" alt="Orchestra members" class="slide_photo"></div>
-                        <div class="info">
+                        <div id="info">
                             <h1 class="gold-text">HELP THE ORCHESTRA</h1>
                             <a href="./contact-us.html"><h3 onmouseover="pause()" onmouseout="play()" class="call_btn">BECOME A MEMBER</h3></a>
                             <a href="./contribute.html"><h3 onmouseover="pause()" onmouseout="play()" class="call_btn">DONATE</h3></a>
@@ -114,12 +126,13 @@
     </div>
     <div class="center-column">
         <!-- Content -->
-        <div class="content-panel">
+        <div class="content-panel-homepage">
             <div class="content-text full-width">
                 <!-- Post name -->
-                <div class="fb-share-button fb-share-right" data-href="http://ditwebtsv.jcu.edu.au/~bro28/m2/post-template.html" data-layout="button"
-                    data-mobile-iframe="true">SHARE</div>
-                <h1>President’s Report</h1>
+              <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <span class="fb-share-button fb-share-right">
+                    <img src="images/Share Btn.png" width="130" height="42" alt=""/></span>
+              <h1>President’s Report</h1>
                 <em>for 2015 AGM North Queensland Ensembles Inc.</em>
                 <div class="line"></div>
                 <div class="content-panel-inner">
@@ -138,13 +151,13 @@
                 </div>
             </div>
         </div>
-        <div class="content-panel flex-panel">
+        <div class="content-panel-homepage-last flex-panel">
             <div class="content-img">
-                <img class="content-panel-image" src="./res/images/DnD01.jpg" alt="dreams and dances">
+                <img class="content-panel-image" src="./res/images/DnD01.jpg">
             </div>
             <div class="content-text">
                 <div class="fb-share-button fb-share-right" data-href="http://ditwebtsv.jcu.edu.au/~bro28/m2/post-dreams-and-dances.html"
-                    data-layout="button" data-mobile-iframe="true">SHARE</div>
+                    data-layout="button" data-mobile-iframe="true"><img src="images/Share Btn.png" width="130" height="42" alt=""/></div>
                 <h1>Richard McIntyre to perform in Dreams and Dances</h1>
                 <em>Conducted by - Richard McIntyre OAM, BMus (University of Sydney)</em>
                 <div class="line"></div>
@@ -173,7 +186,7 @@
                         <a href="./index.html">Homepage</a>
                     </li>
                     <li>
-                        <a href="./past-events.html">Past Events</a>
+                        <a href="events.html">Past Events</a>
                     </li>
                     <li>
                         <a href="./gallery.html">Gallery</a>
@@ -186,10 +199,10 @@
                         <a href="./Supporters.html">Supporters</a>
                     </li>
                     <li>
-                        <a href="./our-people.html">Our People</a>
+                        <a href="people_lifemember.html">Our People</a>
                     </li>
                     <li>
-                        <a href="./about-us.html">About Us</a>
+                        <a href="about.html">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -208,6 +221,8 @@
             </div>
         </footer>
     </div>
+    </div>
+    
 </body>
 
 </html>

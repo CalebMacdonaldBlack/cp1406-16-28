@@ -35,15 +35,7 @@ body {
     margin: 0 auto;
 }
 
-.banner > h1 {
-    color: #e6b800;
-    text-align: center;
-    text-shadow: 2px 2px grey;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 60px;
-    margin: 0;
-    padding-top: 2%;
-}
+
 
 .navigation > a > .nav-btn {
     text-shadow: 2px 2px black;
@@ -84,7 +76,6 @@ a {
 .navigation > a > .nav-btn-active,
 .navigation > a > .nav-btn:hover {
     background-color: #08aa98;
-    
     color: gold;
 }
 
@@ -108,6 +99,8 @@ a {
 }
 
 .center-column {
+	margin-left:10%;
+	margin-right:10%;
     width: 80%;
     float: left;
 }
@@ -249,7 +242,14 @@ a {
 .img-display a {
     color: black;
 }
-
+#gap {
+    width: 80%;
+    height: 2em;
+    border-top-right-radius: 80%;
+    background: white;
+    display:block;
+    clear:both;
+    margin-top: 2em;
 /*
 @media (min-width: 1000px) {
     .left-column {
@@ -271,7 +271,7 @@ a {
 
 
 /* page items */
-
+}
 .page-heading {
     text-shadow: 2px 2px black;
     text-align: center;
@@ -282,10 +282,11 @@ a {
 }
 
 .line {
-    width: 100%;
-    height: 1px;
-    border-bottom: .1em solid grey;
-    margin: 1em 0;
+ 	width: 70%;
+    height: auto;
+    margin: 0 auto;
+    overflow: auto;
+    border-bottom:gray solid 1px;
 }
 
 .row {
@@ -297,13 +298,16 @@ a {
 /* Content panels */
 
 .content-panel {
-    background-color: rgba(0, 90, 90, 0.13);
-    /*border-radius: 0.2em;*/
-    padding: 0.6em;
+    width: 80%;
+    /*height: 45em;*/
     overflow: auto;
-    color: black;
-    margin-bottom: 2em;
-    margin-top: 2em;
+    background: white;
+    margin: 0 auto;
+    padding-top: 2em;
+
+}
+#gap{
+	margin-left:10%;
 }
 
 .flex-panel {
@@ -354,7 +358,8 @@ a {
 }
 
 .content-panel-inner {
-    margin-left: 1em;
+    margin-left: 0.5em;
+	margin-bottom:0.48em;
 }
 
 .content-text > h1 {
@@ -413,12 +418,13 @@ a {
 }
 
 .full-width {
-    width: 95%;
+    width: 96%;
 }
 
 .fb-share-right {
     float: right;
-    margin: 2.2em 1.5em;
+	margin-top:1em;
+	margin-right:3.5em;
     transform: scale(1.5);
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
@@ -543,10 +549,10 @@ form {
 footer {
     background-color: #067a6c;
     overflow: auto;
-    margin: 3em auto;
     border-radius: .3em;
     padding: .8em 4%;
     width: 92%;
+	height:auto;
 }
 
 
@@ -578,14 +584,16 @@ footer {
 
 .footer-column {
     display: inline-block;
-    width: 32%;
-    min-width: 200px;
-    text-align: center;
+    width-left: 50%%;
+    min-width: 5em;
+	align-self:center
+    
 }
 
 .footer-column ul {
     list-style: none;
-}
+	
+	}
 
 .footer-column a,
 .footer-column a:visited {
@@ -790,20 +798,20 @@ footer {
     margin-left: 1em;
     font-family: Candara;
 }
-.info h1, p, h3 {
+#info h1, p, h3 {
     margin: .5em;
 }
-.info {
+#info {
     float: right;
     margin-right: 6em;
     padding-top:4em;
 }
 
-.info > ul {
+#info > ul {
     list-style: none;
 }
 
-.info > ul li {
+#info > ul li {
     padding-bottom: 1em;
 }
 
@@ -838,6 +846,7 @@ footer {
     width: 10%;
     display: block;
     position: absolute;
+	margin-right:2em;
     right: 35%;
     top: 15.2em;
     border-radius: 50%;
@@ -873,7 +882,9 @@ footer {
 }
 #concert_details a, p{
     margin: 0;
-    margin-left: 2em;
+    margin-left: 0.12em;
+	margin-right:0.48em;
+	margin-bottom:0.48em;
 }
 #buyBtn {
     width: 28%;
@@ -901,13 +912,24 @@ footer {
 #slide1:hover {
     cursor: pointer;
 }
+.content-panel-last {
+	width: 80%;
+    /*height: 45em;*/
+    overflow: auto;
+    background: white;
+    margin: 0 auto;
+    padding-top: 2em;
+	margin-bottom: 4em;
+
+}
+
 
 @media (max-width: 1400px) {
     .slide-photo-container {
         display: none;
     }
     
-    .info {
+    #info {
         width: 100%;
         margin-right: 0;
     }
@@ -949,3 +971,65 @@ footer {
         min-width: 165px;
     }
 }
+#img-fix{
+	position:absolute;
+	margin-top:-8.5em;
+	margin-left:2em;
+}
+#img-fix_past_events{
+	position:absolute;
+	margin-top:0.55em;
+	margin-left:2em;
+
+
+}
+.banner > h1 {
+    color: #e6b800;
+    text-align: center;
+    text-shadow: 2px 2px grey;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 60px;
+    margin-left:20%;
+	margin-right:20%;
+    padding-top: 2%;
+}
+#position {
+	margin-left:1.25em;
+}
+.content-panel-mod {
+	width: 80%;
+    /*height: 45em;*/
+    overflow: auto;
+    margin: 0 auto;
+	padding-top: 2em;
+
+}
+.content-panel-homepage {
+	width: 95.25%;
+    /*height: 45em;*/
+    overflow: auto;
+    margin: 0 auto;
+    padding-top: 2em;
+	background-color: white;
+}
+.content-panel-homepage-last {
+	width: 95.25%;
+    /*height: 45em;*/
+    overflow: auto;
+    margin: 0 auto;
+    padding-top: 2em;
+	background-color: white;
+	margin-bottom:2em;
+}
+#id{
+	outline-color:#000000}
+	
+#allign{
+	margin-left:10%;
+	margin-right:10%;
+	}
+#allign-support{
+	margin-left:10%;
+	margin-right:10%;
+}
+

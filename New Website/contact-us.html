@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Barrier Reef Orchestra</title>
+    <link href="images/backless.png" rel="shortcut icon">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" media="screen">
     <script src="./js/formValidation.js"></script>
@@ -14,7 +15,7 @@
 <body>
     <div class="banner" id="banner">
         <h1>Barrier Reef Orchestra</h1>
-    </div>
+    <a href="index.html"><img src="file:///E|/Documents/GitHub/cp1406-16-28/Logo-Designs/backless.png" alt="" width="110" height="110" id="img-fix"/></a> </div>
     <div class="navigation" id="navBar">
         <a href="./index.html">
             <div class="nav-btn nav-left">Home</div>
@@ -52,7 +53,9 @@
         </div>
         <div class="center-column">
             <!-- Content -->
+            <a href="https://www.facebook.com/nqorchestra/"><img id="allign-contact" src="images/Facebook.png" width="500" height="25" alt=""/></a>
             <h1 class="page-heading">Contact Us</h1>
+            <div id="gap"></div>
             <div class="content-panel">
                 <div class="content-text full-width">
                     <h1>Would you like to help out the orchestra?</h1>
@@ -66,7 +69,7 @@
                 </div>
             </div>
             <div class="line"></div>
-            <div class="content-panel">
+            <div class="content-panel-last">
                 <div class="content-text full-width">
                     <h1 class="center-text">Send us a message</h1>
                     <div class="line"></div>
@@ -76,17 +79,17 @@
                                 <label class="error red-text" id="errorLabel"></label>
                                 <br>
                                 <label>Name <span class="red-text">*</span>:</label>
-                                <input class="text-input" type="text" id="name">
+                                <input id="colour" type="text" required class="text-input" id="name">
                                 <br>
                                 <label>Email Address <span class="red-text">*</span>:</label>
-                                <input type="email" id="email">
+                                <input id="colour" type="email" required id="email">
                                 <br>
                                 <label> Phone:</label>
-                                <input type="tel" id="phone">
+                                <input id="colour" type="tel" id="phone">
                                 <br>
                                 <label>Comments <span class="red-text">*</span>:</label>
                             </div>
-                            <textarea maxlength="1000" rows="6" id="comment"></textarea>
+                            <textarea id="colour" rows="6" maxlength="1000" required id="comment"></textarea>
                             <input type="submit" value="Submit" class="btn btn-submit">
                         </form>
                     </div>
@@ -103,7 +106,7 @@
                             <a href="./index.html">Homepage</a>
                         </li>
                         <li>
-                            <a href="./past-events.html">Past Events</a>
+                            <a href="events.html">Past Events</a>
                         </li>
                         <li>
                             <a href="./gallery.html">Gallery</a>
@@ -116,10 +119,10 @@
                             <a href="./Supporters.html">Supporters</a>
                         </li>
                         <li>
-                            <a href="./our-people.html">Our People</a>
+                            <a href="people_lifemember.html">Our People</a>
                         </li>
                         <li>
-                            <a href="./about-us.html">About Us</a>
+                            <a href="about.html">About Us</a>
                         </li>
                     </ul>
                 </div>
