@@ -790,20 +790,20 @@ footer {
     margin-left: 1em;
     font-family: Candara;
 }
-#info h1, p, h3 {
+.info h1, p, h3 {
     margin: .5em;
 }
-#info {
+.info {
     float: right;
     margin-right: 6em;
     padding-top:4em;
 }
 
-#info > ul {
+.info > ul {
     list-style: none;
 }
 
-#info > ul li {
+.info > ul li {
     padding-bottom: 1em;
 }
 
@@ -907,7 +907,7 @@ footer {
         display: none;
     }
     
-    #info {
+    .info {
         width: 100%;
         margin-right: 0;
     }
