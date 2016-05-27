@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Barrier Reef Orchestra</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="./js/formValidation.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/navbar.js"></script>
+</head>
+
+<body>
+    <div class="banner" id="banner">
+        <h1>Barrier Reef Orchestra</h1>
+    </div>
+    <div class="navigation" id="navBar">
+        <a href="./index.html">
+            <div class="nav-btn nav-left">Home</div>
+        </a>
+        <a href="./events.html">
+            <div class="nav-btn">Past Events</div>
+        </a>
+        <a href="./gallery.html">
+            <div class="nav-btn">Gallery</div>
+        </a>
+        <a href="./supporters.html">
+            <div class="nav-btn">Supporters</div>
+        </a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn nav-btn">Our People</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="./people_specialguests.html">Special Guests</a>
+                <a href="./people_lifemember.html">Members</a>
+            </div>
+        </div>
+        <a href="">
+            <div class="nav-btn"></div>
+        </a>
+        <a href="./about.html">
+            <div class="nav-btn">About Us</div>
+        </a>
+        <a href="./contact-us.html">
+            <div class="nav-btn nav-right nav-btn-active">Contact Us</div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="all-column">
+        </div>
+        <div class="left-column">
+        </div>
+        <div class="center-column">
+            <!-- Content -->
+            <h1 class="page-heading">Contact Us</h1>
+            <div class="content-panel">
+                <div class="content-text full-width">
+                    <h1>Would you like to help out the orchestra?</h1>
+                    <div class="line"></div>
+                    <div class="content-panel-inner">
+                        <h2>
+                            Interested in becoming a member of, or a player in, the Orchestra? <br>
+                            Do you have any questions you want to ask?
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="content-panel">
+                <div class="content-text full-width">
+                    <h1 class="center-text">Send us a message</h1>
+                    <div class="line"></div>
+                    <div class="content-panel-inner">
+                        <form name="ContactUs" action="./index.html" onsubmit="return validateContactUs()">
+                            <div class="input-container">
+                                <label class="error red-text" id="errorLabel"></label>
+                                <br>
+                                <label>Name <span class="red-text">*</span>:</label>
+                                <input class="text-input" type="text" id="name">
+                                <br>
+                                <label>Email Address <span class="red-text">*</span>:</label>
+                                <input type="email" id="email">
+                                <br>
+                                <label> Phone:</label>
+                                <input type="tel" id="phone">
+                                <br>
+                                <label>Comments <span class="red-text">*</span>:</label>
+                            </div>
+                            <textarea maxlength="1000" rows="6" id="comment"></textarea>
+                            <input type="submit" value="Submit" class="btn btn-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+        </div>
+        <div class="right-column"></div>
+        <div class="all-column">
+            <footer>
+                <div class="footer-column">
+                    <ul>
+                        <li>
+                            <a href="./index.html">Homepage</a>
+                        </li>
+                        <li>
+                            <a href="./past-events.html">Past Events</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li>
+                            <a href="./Supporters.html">Supporters</a>
+                        </li>
+                        <li>
+                            <a href="./our-people.html">Our People</a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li>
+                            <a href="./contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="./join.html">Join the Orchestra</a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html">Donate to Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

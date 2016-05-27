@@ -1,0 +1,28 @@
+using images as buttons: not modified copy right notifications apply, if used please reconstruct
+
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_fjords_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-border w3-hover-shadow" 
+      src="img_nature_wide.jpg" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-border w3-hover-shadow"
+      src="img_fjords_wide.jpg" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-border w3-hover-shadow" 
+      src="img_mountains_wide.jpg" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Reference:
+
+W3.CSS Slideshow. 2016. W3.CSS Slideshow. [ONLINE] Available at: 
+http://www.w3schools.com/w3css/w3css_slideshow.asp. [Accessed 09 May 2016].
