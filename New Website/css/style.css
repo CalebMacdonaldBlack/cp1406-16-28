@@ -709,7 +709,7 @@ footer {
     background-image: url("../images/banner2.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     padding-bottom: 1em;
     z-index: -1;
 }
