@@ -1,7 +1,7 @@
-#navBar {
+.navBar {
     z-index: 1;
 }
-#content {
+.content {
     z-index: -1;
 }
 .p1 {
@@ -14,10 +14,10 @@
 .p2 {left: 40%;
     opacity: .5;
 }
-#content {
+.content {
     overflow: auto;
 }
-#gallery {
+.gallery {
     width: 80%;
     position: relative;
     margin: 0 auto;
@@ -27,7 +27,7 @@
     margin-top:2em;
 
 }
-#left img {
+.left img {
     width: 40px;
     height: 30px;
     display: block;
@@ -35,11 +35,11 @@
     margin-left: 5px;
     opacity: .4
 }
-#left img:hover {
+.left img:hover {
     opacity: 1;
     cursor: pointer;
 }
-#left {
+.left {
     width: 50px;
     height: 10%;
     position: absolute;
@@ -50,22 +50,22 @@
     opacity:.2;
 }
 
-#left:hover{
+.left:hover{
     cursor: pointer;
     opacity: .2;
 }
 
-#right:hover {
+.right:hover {
     cursor: pointer;
     opacity: .2;
 }
-#right:active {
+.right:active {
     opacity: .9;
 }
-#left:active {
+.left:active {
     opacity: .9;
 }
-#right img {
+.right img {
     width: 40px;
     height: 30px;
     display: block;
@@ -73,11 +73,11 @@
     margin-left: 8px;
     opacity: .4
 }
-#right img:hover {
+.right img:hover {
     opacity: 1;
     cursor: pointer;
 }
-#right {
+.right {
     width: 50px;
     height: 10%;
     position: absolute;
@@ -90,7 +90,7 @@
 
 }
 
-#slide {
+.slide {
     width: 60%;
     height: 30em    ;
     margin-top: 3em;
@@ -101,7 +101,7 @@
     overflow: auto;
     padding: 1em;
 }
-#slide img {
+.slide img {
     dislay: block;
     width: 500px;
     height: 350px;
@@ -124,7 +124,7 @@
 
 }
 
-#slideimage   {
+.slideimage   {
     width: 600px;
     height: 400px;
     display: block;
@@ -135,7 +135,7 @@
     min-height: 400px;
 
 }
-#slideimage img {
+.slideimage img {
     width: 400px;
     height: auto;
     display: block;
@@ -146,13 +146,13 @@
 
 }
 
-#slidelabel {
+.slidelabel {
     position: absolute;
     margin: 0 auto;
     display: none;
     top: 2em;
    }
-#slidelabel h3 {
+.slidelabel h3 {
     color: white;
     text-align: center;
 }
@@ -248,7 +248,7 @@
 }
 
 
-#tab_header {
+.tab_header {
     width: 80%;
     max-width: 80%;
     position: relative;
@@ -257,7 +257,7 @@
     padding: 0;
 }
 
-#tab_header ul li {
+.tab_header ul li {
     font-size: 12px;
     max-font-size: 12px;
     color: white;
@@ -272,10 +272,10 @@
     -webkit-border-top-right-radius: 15px;
 
 }
-#tab_header ul li:hover {
+.tab_header ul li:hover {
     cursor: pointer;
 }
-#tab_header ul {
+.tab_header ul {
     height: 2em;
     position: relative;
     padding: 0;
@@ -287,7 +287,7 @@ footer {
     margin-top: 0;
 }
 
-#close {
+.close {
     float: right;
     position: absolute;
     top: 1em;
@@ -296,7 +296,7 @@ footer {
     margin-top: 1em; border-radius: 5px; background-color:red; color: white;
     opacity: .5;
 }
-#close:hover {opacity: 1; }
+.close:hover {opacity: 1; }
 
 
 

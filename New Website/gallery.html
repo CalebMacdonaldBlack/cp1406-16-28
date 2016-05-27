@@ -14,7 +14,7 @@
 
 <body>
     <div id="top_content">
-        <div class="banner" id="banner">
+        <div class="banner">
             <h1>Barrier Reef Orchestra</h1>
         </div>
         <div class="navigation" id="navBar">
@@ -49,12 +49,12 @@
         </div>
         <div class="row">
         </div>
-        <div id="content">
+        <div class="content">
 
             <h1 class="page-heading">Gallery</h1>
-            <div id="gallery">
-                <div id="tab_header">
-                    <ul id="tab_header_title">
+            <div class="gallery">
+                <div class="tab_header">
+                    <ul class="tab_header_title">
                         <li class="p1" id="p1" onclick="group_select(1)">Slavonic Swoon 2008</li>
                         <li class="p2" id="p2" onclick="group_select(2)">Hot Summer Night 2008</li>
                         <li class="p3" id="p3" onclick="group_select(3)">Last Night of the Proms</li>
@@ -136,19 +136,19 @@
                     <img src="images/lastnightofproms/img27.jpg" alt="last night at the proms" onclick="select(3,27)">
                 </div>
                 <div id="gallery_slide">
-                    <div id="slideimage"> <img class="slidephoto" src="Images/slavonicswoon/img1.jpg" id="img" alt="slavicon" /></div>
-                    <div id="left" onclick="rotate(-1)"><img class="button" src="images/arrow_left.png" alt="left arrow"/></div>
-                    <div id="right" onclick="rotate(1)"><img class="button" src="images/arrow_right.png" alt="right arrow"/></div>
-                    <div id="slidelabel">
-                        <h3 id="label">SLAVONIC SWOON 2008</h3></div>
-                    <button id="close" onclick="document.getElementById('gallery_slide').style.display='none'">x</button>
+                    <div class="slideimage"> <img class="slidephoto" src="Images/slavonicswoon/img1.jpg" id="img" alt="slavicon" /></div>
+                    <div class="left" onclick="rotate(-1)"><img class="button" src="images/arrow_left.png" alt="left arrow"/></div>
+                    <div class="right" onclick="rotate(1)"><img class="button" src="images/arrow_right.png" alt="right arrow"/></div>
+                    <div class="slidelabel">
+                        <h3 class="label">SLAVONIC SWOON 2008</h3></div>
+                    <button class="close" onclick="document.getElementById('gallery_slide').style.display='none'">x</button>
                 </div>
             </div>
         </div>
         <div class="right-column"></div>
         <div class="all-column">
             <footer>
-            <div class="footer-column" id="footer">
+            <div class="footer-column footer">
                 <ul>
                     <li>
                         <a href="./index.html">Homepage</a>
